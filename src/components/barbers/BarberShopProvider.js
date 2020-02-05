@@ -6,9 +6,13 @@ export const BarberShopProvider = props => {
   const [barberShops, setBarberShops] = useState([]);
 
   const getBarberShops = (city, state) => {
-    return fetch(`https://api.yelp.com/v3/businesses/search?term=barbershop&location=${city},${state}`, {
+    return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=barbershop&location=Nashville,TN&limit=50`, {
+      method: "GET",
       headers: {
-        Authorization: "Bearer Z_PpZkY2dOmPoMSaLV974sw1Ud9xAYPxbhB2fJoLZsWbsmoPOI9SRt9RRjx9DjatF-trQdrC4_08cOWexWZlHGnYc5CcBURWbd41JWeKb1vMM9esA9Jg8lEo3605XnYxs"
+        accept: "application/json",
+        "x-requestd-with": "xmlhttprequest",
+        "Access-Control-Allow-Origin": "http://localhost:3000/",
+        Authorization: "Bearer Z_PpZkY2dOmPoMSaLV974sw1Ud9xAYPxbhB2fJoLZsWbsmoPOI9SRt9RRjx9DjatF-trQdrC4_08cOWexWZlHGnYc5CcBURWbd41JWeKb1vMM9esA9Jg8lEo3605XnYx"
       }
     })
       .then(res => res.json())
@@ -16,7 +20,7 @@ export const BarberShopProvider = props => {
   };
 
   useEffect(() => {
-    getBarberShops(city, state);
+    getBarberShops();
   }, []);
 
   useEffect(() => {
@@ -25,12 +29,12 @@ export const BarberShopProvider = props => {
   }, [barberShops]);
 
   return (
-    <BarberContext.Provider
+    <BarberShopContext.Provider
       value={{
         barberShops,
         getBarberShops
       }}>
       {props.children}
-    </BarberContext.Provider>
+    </BarberShopContext.Provider>
   );
 };

@@ -43,7 +43,7 @@ export const UserDataProvider = props => {
 
   useEffect(() => {
     console.log("Users State Changed");
-    console.log(users);
+    // console.log(users);
   }, [users]);
 
   return (

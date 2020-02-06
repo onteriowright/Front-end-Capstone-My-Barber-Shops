@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 export const BarberShopContext = React.createContext();
 
 export const BarberShopProvider = props => {

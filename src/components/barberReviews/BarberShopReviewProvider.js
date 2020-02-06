@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export const BarberReviewContext = React.createContext();
 
-export const BarberReviewProvider = props => {
+export const BarberShopReviewProvider = props => {
   const [barberReviews, setBarberReviews] = useState([]);
 
   const getBarberReviews = () => {

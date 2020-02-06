@@ -5,11 +5,9 @@ import BarberList from "./barbers/BarberList";
 
 export default props => {
   return (
-    <>
-      <MainProvider>
-        <BarberList />
-        <FavoriteBarberList />
-      </MainProvider>
-    </>
+    <MainProvider>
+      <BarberList />
+      <FavoriteBarberList />
+    </MainProvider>
   );
 };

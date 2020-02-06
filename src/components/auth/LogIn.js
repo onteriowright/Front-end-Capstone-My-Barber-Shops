@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import "./Login.css";
+// import "./Login.css";
 
 const Login = props => {
   const email = useRef();
@@ -13,7 +13,7 @@ const Login = props => {
         if (user.length) {
           return user[0];
         }
-        windows.alert("Register new user");
+        window.alert("Register new user");
         return false;
       });
   };

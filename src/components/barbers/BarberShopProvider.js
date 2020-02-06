@@ -5,7 +5,7 @@ export const BarberShopProvider = props => {
   const [barberShops, setBarberShops] = useState([]);
 
   const getBarberShops = (city, state) => {
-    return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=barbershop&location=Nashville,TN&limit=50`, {
+    return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=barbershop&location=${city},${state}&limit=50`, {
       method: "GET",
       headers: {
         accept: "application/json",
@@ -19,12 +19,12 @@ export const BarberShopProvider = props => {
   };
 
   useEffect(() => {
-    getBarberShops();
+    getBarberShops("Antioch", "TN");
   }, []);
 
   useEffect(() => {
     console.log("Barber Shop State Changed");
-    console.log(barberShops);
+    // console.log(barberShops);
   }, [barberShops]);
 
   return (

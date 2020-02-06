@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
 import "./NavBar.css";
-import { UserContext } from "../users/UserProvider";
+import { UsersContext } from "../users/UserDataProvider";
 
 export default props => {
-  const { users } = useContext(UserContext);
+  const { users } = useContext(UsersContext);
   const activeUserId = parseInt(localStorage.getItem("barber_user"));
   const activeUser = users.find(user => user.id === activeUserId) || {};
-  console.log(activeUserId);
 
   return (
     <ul className="navbar">

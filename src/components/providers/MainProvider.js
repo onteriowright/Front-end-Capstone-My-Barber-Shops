@@ -9,7 +9,7 @@ export default props => {
     <BarberShopProvider>
       <BarberShopReviewProvider>
         <UserDataProvider>
-          <FavoriteBarberShopProvider>{props.childrens}</FavoriteBarberShopProvider>
+          <FavoriteBarberShopProvider>{props.children}</FavoriteBarberShopProvider>
         </UserDataProvider>
       </BarberShopReviewProvider>
     </BarberShopProvider>

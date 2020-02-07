@@ -40,13 +40,6 @@ export default props => {
           );
         }}
       />
-      {/* <Route exact path="/editEvent/:eventId(\d+)" render={props => <EventForm {...props} />} />
-      <Route exact path="/createEvent" render={props => <EventForm {...props} />} />
-      <Route exact path="/createNews" render={props => <NewsForm {...props} />} />
-      <Route exact path="/tasks/create" render={props => <TaskForm {...props} />} />
-      <Route exact path="/editNews/:newsId(\d+)" render={props => <NewsForm {...props} />} />
-      <Route exact path="/tasks/edit/:tasksId(\d+)" render={props => <TaskForm {...props} />} />
-      <Route exact path="/editMessage/:messageId(\d+)" render={props => <EditMessageForm {...props} />} /> */}
     </MainProvider>
   );
 };

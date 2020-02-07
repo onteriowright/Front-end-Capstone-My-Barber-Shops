@@ -21,7 +21,7 @@ export const BarberShopProvider = props => {
 
   useEffect(() => {
     if (city !== "" && state !== "") {
-      getBarberShops("", "");
+      getBarberShops(city, state);
     }
   }, []);
 

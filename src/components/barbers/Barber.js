@@ -1,10 +1,7 @@
 import React, { useContext } from "react";
-import { BarberShopContext } from "./BarberShopProvider";
 import { FavoriteBarberShopContext } from "../favoriteBarbers/FavoriteBarberProvider";
-import "./Barber.css";
 
 export default ({ barbershops, props }) => {
-  const { barberShops } = useContext(BarberShopContext);
   const { addFavoriteBarberShop } = useContext(FavoriteBarberShopContext);
 
   return (
@@ -17,7 +14,14 @@ export default ({ barbershops, props }) => {
         <div>Shop Rating: {barbershops.rating}</div>
         <div>Shop Is Open: {barbershops.is_closed === false ? "Yes" : "No"}</div>
         <div>
-          <img className="imageSize" src={barbershops.image_url} alt="BarberShopImage" />
+          {barbershops.image_url === "" ? (
+            <img
+              className="imageSize"
+              src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+            />
+          ) : (
+            <img className="imageSize" src={barbershops.image_url} alt="barbershop-image" />
+          )}
         </div>
         <div>Contact: {barbershops.display_phone}</div>
         <br />

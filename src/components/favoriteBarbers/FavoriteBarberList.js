@@ -4,15 +4,19 @@ import FavoriteBarber from "./FavoriteBarber";
 
 export default props => {
   const { favoriteBarberShops } = useContext(FavoriteBarberShopContext);
-  // console.log(favoriteBarberShops);
+  const activeUserId = parseInt(localStorage.getItem("barber_user"));
+  const favoriteBarberShopsOfActiveUser = favoriteBarberShops.filter(user => user.UserId === activeUserId) || {};
 
   return (
     <>
-      <div>Favorite Barber Shops Go here</div>
-      {favoriteBarberShops.map(barbershop => (
-        <FavoriteBarber key={barbershop.id} props={props} favoriteBarberShops={barbershop} />
-      ))}
-      <button onClick={() => props.history.push("/")}>Back</button>
+      <section className="barberShopList">
+        <div>Favorite Barber Shops Go here</div>
+        <div className="listOfBarbers">
+          {favoriteBarberShopsOfActiveUser.map(barbershop => (
+            <FavoriteBarber key={barbershop.id} props={props} favoriteBarberShops={barbershop} />
+          ))}
+        </div>
+      </section>
     </>
   );
 };

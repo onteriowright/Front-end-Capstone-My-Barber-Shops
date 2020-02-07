@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Barber from "./Barber";
 import { BarberShopContext } from "../barbers/BarberShopProvider";
 
-export default (props) => {
+export default props => {
   const { barberShops } = useContext(BarberShopContext);
   const array = barberShops.businesses;
   console.log(barberShops);

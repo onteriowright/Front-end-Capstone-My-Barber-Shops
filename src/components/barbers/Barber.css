@@ -1,0 +1,19 @@
+.imageSize {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.barberCards {
+  border: 1px dotted;
+  flex-basis: 22%;
+  text-align: center;
+  margin: 10px;
+}
+.listOfBarbers {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.taskForm {
+  max-width: 250px;
+}

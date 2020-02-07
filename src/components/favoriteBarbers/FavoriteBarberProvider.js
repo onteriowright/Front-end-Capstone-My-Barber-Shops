@@ -43,7 +43,7 @@ export const FavoriteBarberShopProvider = props => {
 
   useEffect(() => {
     console.log("Favorites Barber Shop State Changed");
-    console.log(favoriteBarberShops);
+    // console.log(favoriteBarberShops);
   }, [favoriteBarberShops]);
 
   return (

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Login.css";
+// import "./Login.css";
 
 const Register = props => {
   const userName = useRef();
@@ -12,13 +12,15 @@ const Register = props => {
   // }
 
   const existingUserCheck = () => {
-    return fetch(`http://localhost:5000 /users?email=${email.current.value}`)
+    return fetch(`http://localhost:5000/users?email=${email.current.value}`)
       .then(_ => _.json())
       .then(user => {
         if (user.length) {
+          console.log(user);
+          window.alert("User already exist!");
+          props.history.push("/register");
           return true;
         }
-        windows.alert("Email already exist");
         return false;
       });
   };
@@ -41,7 +43,7 @@ const Register = props => {
         })
           .then(_ => _.json())
           .then(createdUser => {
-            if (createdUser.hasOwnProperty("id")) {
+            if (createdUser.hasOwnProperty("id") && createdUser !== userName) {
               localStorage.setItem("barber_user", createdUser.id);
               document.body.classList.remove("logInBackground");
               props.history.push("/");
@@ -75,7 +77,7 @@ const Register = props => {
         </fieldset>
         <fieldset>
           <button className="btn btn-primary registerButton" type="submit">
-            Sign in
+            Sign up
           </button>
         </fieldset>
       </form>

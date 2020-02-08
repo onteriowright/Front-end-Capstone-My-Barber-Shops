@@ -1,21 +1,29 @@
 .navbar {
   background-color: #000;
-  display: flex;
   flex-wrap: nowrap;
   justify-content: left;
   position: sticky !important;
-  position: -webkit-sticky;
   top: 0 !important;
   z-index: 1;
 }
-
 .navbar__message {
   color: whitesmoke;
+  position: relative;
+  top: 20px;
+}
+.navbar_items_position {
+  display: flex;
+  justify-content: flex-end;
 }
 .navbar__item {
+  position: relative;
   flex-basis: 20%;
+  bottom: 20px;
   list-style-type: none;
+  text-decoration: none;
   text-align: center;
+  color: #fff;
+  font-size: 18px;
 }
 
 .navbar-text {

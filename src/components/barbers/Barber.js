@@ -7,23 +7,27 @@ export default ({ barbershops, props }) => {
   return (
     <>
       <section className="barberCards">
-        <div>Shop Name: {barbershops.name}</div>
-        <br />
-        <div>Shop Location: {barbershops.location.city}</div>
-        <br />
-        <div>Shop Rating: {barbershops.rating}</div>
-        <div>Shop Is Open: {barbershops.is_closed === false ? "Yes" : "No"}</div>
-        <div>
+        <div className="barberCardInfo">
+          <h3>{barbershops.name}</h3>
+        </div>
+        <div className="barberCardInfo">{barbershops.location.city}</div>
+        <div className="barberCardInfo">Shop Rated {barbershops.rating}</div>
+        <div className="barberCardInfo">
           {barbershops.image_url === "" ? (
             <img
               className="imageSize"
               src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+              alt="barbershop"
             />
           ) : (
-            <img className="imageSize" src={barbershops.image_url} alt="barbershop-image" />
+            <img className="imageSize" src={barbershops.image_url} alt="barbershop" />
           )}
         </div>
-        <div>Contact: {barbershops.display_phone}</div>
+        <div className="barberCardInfo">Contact {barbershops.display_phone}</div>
+        <div className="barberCardInfo">Address</div>
+        <div className="barberCardInfo">{barbershops.location.display_address[0]}</div>
+        <div className="barberCardInfo">{barbershops.location.display_address[1]}</div>
+        <button>Show reviews</button>
         <br />
         <button
           onClick={() =>
@@ -34,6 +38,8 @@ export default ({ barbershops, props }) => {
               rating: barbershops.rating,
               image: barbershops.image_url,
               contact: barbershops.display_phone,
+              street: barbershops.location.display_address[0],
+              cityStateZip: barbershops.location.display_address[1],
               UserId: parseInt(localStorage.getItem("barber_user"))
             }).then(() => props.history.push("/favoriteBarberShops"))
           }>

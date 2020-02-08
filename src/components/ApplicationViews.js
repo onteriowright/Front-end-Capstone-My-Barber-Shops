@@ -15,7 +15,7 @@ export default props => {
         render={props => {
           return (
             <>
-              <section className="dashboardContainer">
+              <section className="barberShopView">
                 <div className="barbershopListContainer">
                   <BarberForm {...props} />
                 </div>

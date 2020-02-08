@@ -10,27 +10,32 @@ export default props => {
 
   return (
     <ul className="navbar">
-      <div></div>
-      <Link to="/">Home</Link>
       <h3 className="navbar__message">{activeUser.userName}</h3>
-      {localStorage.getItem("barber_user") ? (
-        <>
-          <Link to="/favoriteBarberShops">Favorites</Link>
-          <li className="navbar__item">
-            <button
-              className="logoutButton btn btn-secondary "
-              onClick={e => {
-                e.preventDefault();
-                localStorage.removeItem("barber_user");
-                props.history.push("/");
-              }}>
-              Log Out
-            </button>
-          </li>
-        </>
-      ) : (
-        ""
-      )}
+      <div className="navbar_items_position">
+        <Link className="navbar__item" to="/">
+          Home
+        </Link>
+        <Link className="navbar__item" to="/favoriteBarberShops">
+          Favorites
+        </Link>
+        {localStorage.getItem("barber_user") ? (
+          <>
+            <li className="navbar__item">
+              <button
+                className="logoutButton btn btn-secondary "
+                onClick={e => {
+                  e.preventDefault();
+                  localStorage.removeItem("barber_user");
+                  props.history.push("/");
+                }}>
+                Log Out
+              </button>
+            </li>
+          </>
+        ) : (
+          ""
+        )}
+      </div>
     </ul>
   );
 };

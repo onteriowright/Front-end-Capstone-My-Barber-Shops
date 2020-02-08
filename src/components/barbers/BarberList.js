@@ -5,7 +5,6 @@ import { BarberShopContext } from "../barbers/BarberShopProvider";
 export default props => {
   const { barberShops } = useContext(BarberShopContext);
   const array = barberShops.businesses;
-  console.log(barberShops);
 
   if (array === undefined) {
     console.log("Still loading");
@@ -17,8 +16,10 @@ export default props => {
 
   return (
     <>
+      <div className="">
+        <h1 className="listOfBarbersHeading">List Of Local Barbers</h1>
+      </div>
       <section className="barberShopList">
-        <div>{<h1>List Of Local Barbers</h1>}</div>
         <div className="listOfBarbers">
           {array.map(businesses => (
             <Barber key={businesses.id} props={props} barbershops={businesses} />

@@ -2,18 +2,39 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  text-align: center;
 }
 .barberCards {
   border: 1px dotted;
-  flex-basis: 22%;
+  flex-basis: 29%;
   text-align: center;
-  margin: 10px;
+  margin: 8px;
+  max-height: 550px;
+}
+.barberCardInfo {
+  margin: 8px;
 }
 .listOfBarbers {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.taskForm {
+.barberForm {
   max-width: 250px;
+}
+.barberShopList {
+  padding: 5px;
+  margin-top: 25px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.barberShopView {
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.listOfBarbersHeading {
+  text-align: center;
 }

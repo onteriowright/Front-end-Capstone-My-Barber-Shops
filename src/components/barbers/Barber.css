@@ -28,8 +28,11 @@
   max-height: 500px;
   overflow-y: auto;
 }
-.barberShopView {
-  display: flex;
+@media (min-width: 1250px) {
+  .barberShopView {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 ::-webkit-scrollbar {

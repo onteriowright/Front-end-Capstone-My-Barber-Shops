@@ -1,8 +1,11 @@
 import React, { useContext } from "react";
 import { FavoriteBarberShopContext } from "../favoriteBarbers/FavoriteBarberProvider";
+import { BarberReviewContext } from "../barberReviews/BarberShopReviewProvider";
 
 export default ({ barbershops, props }) => {
-  const { addFavoriteBarberShop } = useContext(FavoriteBarberShopContext);
+  const { addFavoriteBarberShop, favoriteBarberShops } = useContext(FavoriteBarberShopContext);
+
+  const { barberReviews } = useContext(BarberReviewContext);
 
   return (
     <>
@@ -40,9 +43,10 @@ export default ({ barbershops, props }) => {
               contact: barbershops.display_phone,
               street: barbershops.location.display_address[0],
               cityStateZip: barbershops.location.display_address[1],
-              UserId: parseInt(localStorage.getItem("barber_user"))
+              userId: parseInt(localStorage.getItem("barber_user"))
             }).then(() => props.history.push("/favoriteBarberShops"))
-          }>
+          }
+        >
           Add Barber
         </button>
       </section>

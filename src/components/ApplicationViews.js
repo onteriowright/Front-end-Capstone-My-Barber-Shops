@@ -4,6 +4,7 @@ import MainProvider from "./providers/MainProvider";
 import BarberList from "./barbers/BarberList";
 import FavoriteBarberList from "./favoriteBarbers/FavoriteBarberList";
 import BarberForm from "./barbers/BarberForm";
+import BarberShopReviewForm from "./barberReviews/BarberShopReviewForm";
 import "./barbers/Barber.css";
 
 export default props => {
@@ -27,19 +28,9 @@ export default props => {
           );
         }}
       />
-      <Route
-        exact
-        path="/favoriteBarberShops"
-        render={props => {
-          return (
-            <>
-              <div className="favoriteBarbershopContainer">
-                <FavoriteBarberList {...props} />
-              </div>
-            </>
-          );
-        }}
-      />
+      <Route exact path="/favoriteBarberShops" render={props => <FavoriteBarberList {...props} />} />
+      <Route exact path="/favoriteBarberShops/create" render={props => <BarberShopReviewForm {...props} />} />
+      <Route exact path="/favoriteBarberShops/edit/:shopId(\d+)" render={props => <BarberShopReviewForm {...props} />} />
     </MainProvider>
   );
 };

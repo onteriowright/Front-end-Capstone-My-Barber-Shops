@@ -6,11 +6,24 @@ export default ({ props, favoriteBarberShopsReviews }) => {
 
   return (
     <>
-      <section className="barberCards">
+      <section className="barberReviewCards">
         <div className="barberCardInfo">{favoriteBarberShopsReviews.reviews}</div>
         <div>Created: {favoriteBarberShopsReviews.dateCreated}</div>
-        <button onClick={() => props.history.push(`/favoriteBarberShops/edit/${favoriteBarberShopsReviews.id}`)}>Edit Review</button>
-        <button onClick={() => deleteBarberReviews(favoriteBarberShopsReviews).then(() => props.history.push("/shopReviews"))}>Delete Review</button>
+        <div className="form-btns review-btns">
+          <button className="btn btn-dark btn-sm" onClick={() => props.history.push(`/favoriteBarberShops/edit/${favoriteBarberShopsReviews.id}`)}>
+            Edit Review
+          </button>
+          <button
+            className="btn btn-danger btn-sm"
+            onClick={() => {
+              if (window.confirm("Are you sure you want to delete this review?")) {
+                deleteBarberReviews(favoriteBarberShopsReviews).then(() => props.history.push("/shopReviews"));
+              }
+            }}
+          >
+            Delete Review
+          </button>
+        </div>
       </section>
     </>
   );

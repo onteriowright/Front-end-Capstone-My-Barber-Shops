@@ -14,7 +14,7 @@ export default props => {
       <form className="barberForm">
         <h2 className="barberForm__title">Search Barbers By Location</h2>
         <fieldset>
-          <div className="form-group">
+          <div className="form-group-lg">
             <label htmlFor="name">City: </label>
             <input type="text" name="name" required autoFocus className="form-control" proptype="varchar" placeholder="Enter City" ref={city} />
           </div>
@@ -32,19 +32,23 @@ export default props => {
             </select>
           </div>
         </fieldset>
-        <button
-          type="submit"
-          onClick={evt => {
-            evt.preventDefault();
-            if (city.current.value !== "" && state.current.value !== "0") {
-              getBarberShops(city.current.value, state.current.value).then(() => props.history.push("/"));
-            }
-          }}
-          className="btn btn-primary"
-        >
-          Search
-        </button>
-        <button onClick={() => props.history.push("/shopReviews")}>View My Reviews</button>
+        <div className="form-btns">
+          <button
+            type="submit"
+            onClick={evt => {
+              evt.preventDefault();
+              if (city.current.value !== "" && state.current.value !== "0") {
+                getBarberShops(city.current.value, state.current.value).then(() => props.history.push("/"));
+              }
+            }}
+            className="btn btn-primary btn-sm"
+          >
+            Search
+          </button>
+          <button onClick={() => props.history.push("/shopReviews")} className="btn btn-dark btn-sm">
+            View My Reviews
+          </button>
+        </div>
       </form>
     </>
   );

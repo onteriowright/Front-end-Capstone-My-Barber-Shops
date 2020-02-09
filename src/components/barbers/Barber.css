@@ -5,11 +5,18 @@
   text-align: center;
 }
 .barberCards {
-  border: 1px dotted;
-  flex-basis: 29%;
+  /* border: 1px do tted; */
+  flex-basis: 38%;
   text-align: center;
   margin: 8px;
   max-height: 550px;
+}
+.barberReviewCards {
+  flex-wrap: wrap;
+  border: 1px solid;
+  flex-basis: 49%;
+  text-align: center;
+  margin: 8px;
 }
 .barberCardInfo {
   margin: 8px;
@@ -21,23 +28,25 @@
 }
 .barberForm {
   max-width: 250px;
+  max-height: 190px;
+  margin-left: 10px;
 }
 .barberShopList {
   padding: 5px;
-  margin-top: 25px;
+  margin-top: 45px;
   max-height: 500px;
   overflow-y: auto;
 }
-@media (min-width: 1250px) {
-  .barberShopView {
-    display: flex;
-    justify-content: center;
-  }
+.form-btns {
+  display: flex;
+  justify-content: space-between;
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
 .listOfBarbersHeading {
   text-align: center;
+}
+.review-btns {
+  justify-content: space-between;
 }

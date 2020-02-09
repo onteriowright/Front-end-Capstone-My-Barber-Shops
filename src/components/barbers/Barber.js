@@ -28,6 +28,7 @@ export default ({ barbershops, props }) => {
         <div className="barberCardInfo">{barbershops.location.display_address[0]}</div>
         <div className="barberCardInfo">{barbershops.location.display_address[1]}</div>
         <button
+          className="btn btn-primary btn-sm"
           onClick={() =>
             addFavoriteBarberShop({
               shopId: barbershops.id,

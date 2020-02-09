@@ -10,7 +10,9 @@ export default props => {
   return (
     <>
       <h3>Barber Shops</h3>
-      <button onClick={() => props.history.push("/favoriteBarberShops/create")}>Create Review</button>
+      <button className="btn btn-primary btn-sm" onClick={() => props.history.push("/favoriteBarberShops/create")}>
+        Create Review
+      </button>
       <section className="barberShopList">
         <div className="listOfBarbers">
           {barberShopsReviewsOfActiveUser.map(barbershop => (

@@ -53,8 +53,8 @@ export default props => {
   };
 
   return (
-    <form className="taskForm">
-      <h3 className="taskForm__title">{editMode ? "Update Review" : "Save Review"}</h3>
+    <form className="barberForm">
+      <h3 className="barberReviewForm__title">{editMode ? "Update Review" : "Save Review"}</h3>
       <fieldset>
         <div className="form-group">
           <label htmlFor="name">Review </label>
@@ -67,7 +67,7 @@ export default props => {
             rows="5"
             className="form-control"
             proptype="varchar"
-            placeholder="Review"
+            placeholder="Enter review"
             defaultValue={barberReview.reviews}
             onChange={handleControlledInputChange}
           ></textarea>
@@ -80,19 +80,21 @@ export default props => {
         </div>
       </fieldset>
       <div className="taskButtonContainer">
-        <button
-          type="submit"
-          onClick={clickEvent => {
-            clickEvent.preventDefault();
-            constructNewReviews();
-          }}
-          className="btn btn-primary"
-        >
-          {editMode ? "Save Updates" : "Save Review"}
-        </button>
-        <button className="btn btn-light" onClick={() => props.history.push("/shopReviews")}>
-          Close
-        </button>
+        <div className="form-btns">
+          <button
+            type="submit"
+            onClick={clickEvent => {
+              clickEvent.preventDefault();
+              constructNewReviews();
+            }}
+            className="btn btn-primary btn-sm"
+          >
+            {editMode ? "Save Updates" : "Save Review"}
+          </button>
+          <button className="btn btn-dark btn-sm" onClick={() => props.history.push("/shopReviews")}>
+            Close
+          </button>
+        </div>
       </div>
     </form>
   );

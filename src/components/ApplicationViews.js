@@ -18,10 +18,10 @@ export default props => {
           return (
             <>
               <section className="barberShopView">
-                <div className="barbershopListContainer">
+                <div className="barberShopContainer">
                   <BarberForm {...props} />
                 </div>
-                <div className="barberShopContainer">
+                <div className="barbershopListContainer">
                   <BarberList {...props} />
                 </div>
               </section>

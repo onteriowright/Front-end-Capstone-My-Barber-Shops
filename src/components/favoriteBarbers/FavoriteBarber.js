@@ -27,7 +27,16 @@ export default ({ props, favoriteBarberShops }) => {
         <div className="barberCardInfo">Address</div>
         <div className="barberCardInfo">{favoriteBarberShops.street}</div>
         <div className="barberCardInfo">{favoriteBarberShops.cityStateZip}</div>
-        <button onClick={() => deleteFavoriteBarberShop(favoriteBarberShops).then(() => props.history.push("/favoriteBarberShops"))}>Remove Barber Shop</button>
+        <button
+          className="btn btn-danger btn-sm"
+          onClick={() => {
+            if (window.confirm("Are you sure you want to delete this shop?")) {
+              deleteFavoriteBarberShop(favoriteBarberShops).then(() => props.history.push("/favoriteBarberShops"));
+            }
+          }}
+        >
+          Remove Barber Shop
+        </button>
       </section>
     </>
   );

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+
 export const BarberShopContext = React.createContext();
 
 export const BarberShopProvider = props => {
   const [barberShops, setBarberShops] = useState([]);
-  let city = "";
-  let state = "";
+
   const getBarberShops = (city, state) => {
     return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=barbershop&location=${city},${state}&limit=50`, {
       method: "GET",
@@ -16,17 +16,21 @@ export const BarberShopProvider = props => {
       }
     })
       .then(res => res.json())
-      .then(setBarberShops);
+      .then(setBarberShops)
+      .catch(err => err);
   };
 
   useEffect(() => {
-    if (city !== "" && state !== "") {
+    let city = "";
+    let state = "";
+    if (city !== "" && state !== "0") {
       getBarberShops(city, state);
     }
   }, []);
 
   useEffect(() => {
     console.log("Barber Shop State Changed");
+    console.log(barberShops);
   }, [barberShops]);
 
   return (
@@ -34,7 +38,8 @@ export const BarberShopProvider = props => {
       value={{
         barberShops,
         getBarberShops
-      }}>
+      }}
+    >
       {props.children}
     </BarberShopContext.Provider>
   );

@@ -3,8 +3,9 @@ import { BarberReviewContext } from "./BarberShopReviewProvider";
 
 export default props => {
   const { addBarberReviews, barberReviews, editBarberShopReviews } = useContext(BarberReviewContext);
+
   const [barberReview, setReviews] = useState({});
-  const dateCreated = useRef(null);
+  const reviewCreated = useRef(null);
 
   const editMode = props.match.params.hasOwnProperty("shopId");
 
@@ -31,50 +32,51 @@ export default props => {
   }, [barberReviews]);
 
   const constructNewReviews = () => {
-    if (barberReview.reviews === "") {
+    if (barberReview.name === "") {
       window.alert("Please enter Review");
     } else {
       if (editMode) {
-        console.log(barberReview.id);
         editBarberShopReviews({
           id: barberReview.id,
-          reviews: barberReview.reviews,
-          dateCreated: dateCreated.current.value,
+          reviews: barberReview.name,
+          dateCreated: reviewCreated.current.value,
           userId: parseInt(localStorage.getItem("barber_user"))
-        }).then(() => props.history.push("/favoriteBarberShops"));
+        }).then(() => props.history.push("/shopReviews"));
       } else {
         addBarberReviews({
-          reviews: barberReview.reviews,
-          dateCreated: dateCreated.current.value,
+          reviews: barberReview.name,
+          dateCreated: reviewCreated.current.value,
           userId: parseInt(localStorage.getItem("barber_user"))
-        }).then(() => props.history.push("/favoriteBarberShops"));
+        }).then(() => props.history.push("/shopReviews"));
       }
     }
   };
 
   return (
     <form className="taskForm">
-      <h2 className="taskForm__title">{editMode ? "Update Review" : "Save Review"}</h2>
+      <h3 className="taskForm__title">{editMode ? "Update Review" : "Save Review"}</h3>
       <fieldset>
         <div className="form-group">
           <label htmlFor="name">Review </label>
-          <input
+          <textarea
             type="text"
             name="name"
             required
             autoFocus
+            cols="40"
+            rows="5"
             className="form-control"
             proptype="varchar"
             placeholder="Review"
             defaultValue={barberReview.reviews}
             onChange={handleControlledInputChange}
-          />
+          ></textarea>
         </div>
       </fieldset>
       <fieldset>
         <div className="form-group">
           <label htmlFor="tasks">Review Date: </label>
-          <input type="date" name="date" ref={dateCreated} required className="form-control" defaultValue={barberReview.dateCompleted} onChange={handleControlledInputChange} />
+          <input type="date" name="date" ref={reviewCreated} required className="form-control" defaultValue={barberReview.dateCreated} onChange={handleControlledInputChange} />
         </div>
       </fieldset>
       <div className="taskButtonContainer">
@@ -86,9 +88,9 @@ export default props => {
           }}
           className="btn btn-primary"
         >
-          {editMode ? "Save Updates" : "Save Task"}
+          {editMode ? "Save Updates" : "Save Review"}
         </button>
-        <button className="btn btn-light" onClick={() => props.history.push("/")}>
+        <button className="btn btn-light" onClick={() => props.history.push("/shopReviews")}>
           Close
         </button>
       </div>

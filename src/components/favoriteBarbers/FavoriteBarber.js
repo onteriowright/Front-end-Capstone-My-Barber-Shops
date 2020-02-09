@@ -1,12 +1,8 @@
 import React, { useContext } from "react";
-// import { Link } from "react-router-dom";
 import { FavoriteBarberShopContext } from "./FavoriteBarberProvider";
-// import { BarberReviewContext } from "../barberReviews/BarberShopReviewProvider";
 
 export default ({ props, favoriteBarberShops }) => {
   const { deleteFavoriteBarberShop } = useContext(FavoriteBarberShopContext);
-  // const { barberReviews } = useContext(BarberReviewContext);
-  // console.log(barberReviews);
 
   return (
     <>
@@ -31,8 +27,6 @@ export default ({ props, favoriteBarberShops }) => {
         <div className="barberCardInfo">Address</div>
         <div className="barberCardInfo">{favoriteBarberShops.street}</div>
         <div className="barberCardInfo">{favoriteBarberShops.cityStateZip}</div>
-        <button onClick={() => props.history.push("/favoriteBarberShops/create")}>Add review</button>
-        <br />
         <button onClick={() => deleteFavoriteBarberShop(favoriteBarberShops).then(() => props.history.push("/favoriteBarberShops"))}>Remove Barber Shop</button>
       </section>
     </>

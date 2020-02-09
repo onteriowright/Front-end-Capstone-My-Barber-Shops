@@ -16,7 +16,7 @@ export default props => {
         <fieldset>
           <div className="form-group">
             <label htmlFor="name">City: </label>
-            <input type="text" name="name" required autoFocus className="form-control" proptype="varchar" placeholder="Enter City" ref={city}/>
+            <input type="text" name="name" required autoFocus className="form-control" proptype="varchar" placeholder="Enter City" ref={city} />
           </div>
         </fieldset>
         <fieldset>
@@ -40,9 +40,11 @@ export default props => {
               getBarberShops(city.current.value, state.current.value).then(() => props.history.push("/"));
             }
           }}
-          className="btn btn-primary">
+          className="btn btn-primary"
+        >
           Search
         </button>
+        <button onClick={() => props.history.push("/shopReviews")}>View My Reviews</button>
       </form>
     </>
   );

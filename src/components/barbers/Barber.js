@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
 import { FavoriteBarberShopContext } from "../favoriteBarbers/FavoriteBarberProvider";
-import { BarberReviewContext } from "../barberReviews/BarberShopReviewProvider";
 
 export default ({ barbershops, props }) => {
-  const { addFavoriteBarberShop, favoriteBarberShops } = useContext(FavoriteBarberShopContext);
-
-  const { barberReviews } = useContext(BarberReviewContext);
+  const { addFavoriteBarberShop } = useContext(FavoriteBarberShopContext);
 
   return (
     <>
@@ -30,8 +27,6 @@ export default ({ barbershops, props }) => {
         <div className="barberCardInfo">Address</div>
         <div className="barberCardInfo">{barbershops.location.display_address[0]}</div>
         <div className="barberCardInfo">{barbershops.location.display_address[1]}</div>
-        <button>Show reviews</button>
-        <br />
         <button
           onClick={() =>
             addFavoriteBarberShop({

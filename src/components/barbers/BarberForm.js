@@ -11,8 +11,8 @@ export default props => {
 
   return (
     <>
-      <form className="barberForm">
-        <h2 className="barberForm__title">Search Barbers By Location</h2>
+      <form className="barberForm dropdown-backdrop">
+        <h4 className="barberForm__title">Search Barbers By Location</h4>
         <fieldset>
           <div className="form-group-lg">
             <label htmlFor="name">City: </label>

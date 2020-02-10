@@ -8,6 +8,7 @@
 }
 .navbar__message {
   color: whitesmoke;
+  font-family: "Julius Sans One", sans-serif;
 }
 .navbar_items_position {
   display: flex;
@@ -15,6 +16,8 @@
   justify-content: space-evenly;
 }
 .navbar__item {
+  position: relative;
+  left: 180px;
   list-style-type: none;
   margin: 5px;
   text-decoration: none;
@@ -24,6 +27,8 @@
 }
 @media (min-width: 1250px) {
   .navbar__item {
+    position: relative;
+    left: 0px;
     list-style-type: none;
     margin: 20px;
     text-decoration: none;

@@ -1,25 +1,5 @@
-.barberShopView {
-  display: flex;
-}
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 
-.barbershopListContainer {
-  border-right: 1px solid black;
-  padding: 20pt;
-  flex-basis: 20%;
-  margin: 10px;
-}
-
-.barberShopContainer {
-  flex-basis: 50%;
-  margin: 10px;
-  max-width: 50%;
-}
-
-.tasksContainer {
-  border-left: 1px solid black;
-  padding: 20pt;
-  flex-basis: 25%;
-  position: fixed;
-  right: 0;
-  max-width: 350px;
+.body-font {
+  font-family: "Source Sans Pro", sans-serif;
 }

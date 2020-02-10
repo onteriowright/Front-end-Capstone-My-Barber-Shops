@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap");
+
 .imageSize {
   width: 200px;
   height: 200px;
@@ -5,7 +7,6 @@
   text-align: center;
 }
 .barberCards {
-  /* border: 1px do tted; */
   flex-basis: 38%;
   text-align: center;
   margin: 8px;
@@ -37,15 +38,26 @@
   max-height: 500px;
   overflow-y: auto;
 }
+.dropdown-backdrop {
+  position: static;
+  z-index: -1;
+}
 .form-btns {
   display: flex;
   justify-content: space-between;
+}
+.listOfBarbersPlacement {
+  margin-top: 100px;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 .listOfBarbersHeading {
   text-align: center;
+}
+.loading {
+  text-align: center;
+  margin-top: 150px;
 }
 .review-btns {
   justify-content: space-between;

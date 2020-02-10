@@ -4,8 +4,10 @@ export const BarberShopContext = React.createContext();
 
 export const BarberShopProvider = props => {
   const [barberShops, setBarberShops] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const getBarberShops = (city, state) => {
+    setLoading(true);
     return fetch(
       `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?client_id=${process.env.REACT_APP_YELP_CLIENT_ID}&term=barbershop&location=${city},${state}&limit=50`,
       {
@@ -20,7 +22,10 @@ export const BarberShopProvider = props => {
     )
       .then(res => res.json())
       .then(setBarberShops)
-      .catch(err => err);
+      .catch(err => err)
+      .then(() => {
+        setLoading(false);
+      });
   };
 
   useEffect(() => {
@@ -33,14 +38,15 @@ export const BarberShopProvider = props => {
 
   useEffect(() => {
     console.log("Barber Shop State Changed");
-    console.log(barberShops);
+    // console.log(barberShops);
   }, [barberShops]);
 
   return (
     <BarberShopContext.Provider
       value={{
         barberShops,
-        getBarberShops
+        getBarberShops,
+        loading
       }}
     >
       {props.children}

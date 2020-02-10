@@ -1,11 +1,18 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { BarberReviewContext } from "./BarberShopReviewProvider";
+import { FavoriteBarberShopContext } from "../favoriteBarbers/FavoriteBarberProvider";
 
 export default props => {
   const { addBarberReviews, barberReviews, editBarberShopReviews } = useContext(BarberReviewContext);
+  const { favoriteBarberShops } = useContext(FavoriteBarberShopContext);
 
   const [barberReview, setReviews] = useState({});
+
   const reviewCreated = useRef(null);
+
+  const activeUserId = parseInt(localStorage.getItem("barber_user"));
+
+  const foundShopReview = favoriteBarberShops.filter(shop => shop.userId === activeUserId);
 
   const editMode = props.match.params.hasOwnProperty("shopId");
 
@@ -29,6 +36,7 @@ export default props => {
 
   useEffect(() => {
     setDefaults();
+    // eslint-disable-next-line
   }, [barberReviews]);
 
   const constructNewReviews = () => {
@@ -40,12 +48,14 @@ export default props => {
           id: barberReview.id,
           reviews: barberReview.name,
           dateCreated: reviewCreated.current.value,
+          shopName: barberReview.barberShop,
           userId: parseInt(localStorage.getItem("barber_user"))
         }).then(() => props.history.push("/shopReviews"));
       } else {
         addBarberReviews({
           reviews: barberReview.name,
           dateCreated: reviewCreated.current.value,
+          shopName: barberReview.barberShop,
           userId: parseInt(localStorage.getItem("barber_user"))
         }).then(() => props.history.push("/shopReviews"));
       }
@@ -53,7 +63,7 @@ export default props => {
   };
 
   return (
-    <form className="barberForm">
+    <form className="barberForm dropdown-backdrop">
       <h3 className="barberReviewForm__title">{editMode ? "Update Review" : "Save Review"}</h3>
       <fieldset>
         <div className="form-group">
@@ -71,6 +81,19 @@ export default props => {
             defaultValue={barberReview.reviews}
             onChange={handleControlledInputChange}
           ></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div className="form-group">
+          <label htmlFor="barberShop">Location: </label>
+          <select name="barberShop" className="form-control" proptype="text" value={foundShopReview.shopName} onChange={handleControlledInputChange}>
+            <option value="0">Select a Barbershop</option>
+            {foundShopReview.map(shop => (
+              <option key={shop.id} value={shop.shopName}>
+                {shop.shopName}
+              </option>
+            ))}
+          </select>
         </div>
       </fieldset>
       <fieldset>

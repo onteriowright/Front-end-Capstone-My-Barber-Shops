@@ -46,7 +46,9 @@ const Login = props => {
             <input ref={password} type="password" id="password" className="form-control" placeholder="Password" required />
           </fieldset>
           <fieldset>
-            <button type="submit">Sign in</button>
+            <button className="btn btn-primary btn-sm" type="submit">
+              Sign in
+            </button>
           </fieldset>
         </form>
       </section>

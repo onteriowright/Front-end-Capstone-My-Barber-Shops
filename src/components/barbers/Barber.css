@@ -28,9 +28,9 @@
   flex-wrap: wrap;
 }
 .barberForm {
-  max-width: 250px;
+  max-width: 350px;
   max-height: 190px;
-  margin-left: 10px;
+  margin: auto;
 }
 .barberShopList {
   padding: 5px;
@@ -61,4 +61,6 @@
 }
 .review-btns {
   justify-content: space-between;
+}
+.register-btn {
 }

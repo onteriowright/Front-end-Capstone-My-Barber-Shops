@@ -4,7 +4,9 @@ import FavoriteBarber from "./FavoriteBarber";
 
 export default props => {
   const { favoriteBarberShops } = useContext(FavoriteBarberShopContext);
+
   const activeUserId = parseInt(localStorage.getItem("barber_user"));
+
   const favoriteBarberShopsOfActiveUser = favoriteBarberShops.filter(user => user.userId === activeUserId) || {};
 
   return (

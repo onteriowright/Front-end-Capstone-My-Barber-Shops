@@ -10,7 +10,7 @@ export default props => {
 
   return (
     <ul className="navbar">
-      <h3 className="navbar__message">{activeUser.userName}</h3>
+      <h3 className="navbar__message">Let's find you a shop {activeUser.userName}</h3>
       <div className="navbar_items_position">
         <Link style={{ textDecoration: "none" }} className="navbar__item" to="/">
           Home
@@ -22,7 +22,7 @@ export default props => {
           <>
             <li className="navbar__item">
               <button
-                className="logoutButton btn btn-secondary "
+                className="logoutButton btn btn-secondary btn-sm"
                 onClick={e => {
                   e.preventDefault();
                   localStorage.removeItem("barber_user");

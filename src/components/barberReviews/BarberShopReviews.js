@@ -9,6 +9,7 @@ export default ({ props, favoriteBarberShopsReviews }) => {
       <section className="barberReviewCards">
         <div className="barberCardInfo">{favoriteBarberShopsReviews.reviews}</div>
         <div>Created: {favoriteBarberShopsReviews.dateCreated}</div>
+        <div>Shop Name: {favoriteBarberShopsReviews.shopName}</div>
         <div className="form-btns review-btns">
           <button className="btn btn-dark btn-sm" onClick={() => props.history.push(`/favoriteBarberShops/edit/${favoriteBarberShopsReviews.id}`)}>
             Edit Review

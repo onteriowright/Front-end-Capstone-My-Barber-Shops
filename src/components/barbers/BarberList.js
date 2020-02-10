@@ -1,31 +1,43 @@
 import React, { useContext } from "react";
 import Barber from "./Barber";
 import { BarberShopContext } from "../barbers/BarberShopProvider";
+import Loading from "../loading/Loading";
 
 export default props => {
-  const { barberShops } = useContext(BarberShopContext);
+  const { barberShops, loading } = useContext(BarberShopContext);
   const array = barberShops.businesses;
 
   if (array === undefined) {
-    console.log("Still loading");
-    return "";
+    return (
+      <div className="loading">
+        <h1>Welcome To My Barber Shops</h1>
+      </div>
+    );
   } else {
     const sortedRatings = array.sort((a, b) => b.rating - a.rating);
     sortedRatings.map(business => <Barber key={business.id} barbershops={business} />);
   }
 
-  return (
-    <>
-      <div className="">
-        <h1 className="listOfBarbersHeading">List Of Local Barbers</h1>
+  if (loading) {
+    return (
+      <div className="loading">
+        <Loading />
       </div>
-      <section className="barberShopList">
-        <div className="listOfBarbers">
-          {array.map(businesses => (
-            <Barber key={businesses.id} props={props} barbershops={businesses} />
-          ))}
+    );
+  } else {
+    return (
+      <>
+        <div className="listOfBarbersPlacement ">
+          <h1 className="listOfBarbersHeading">List Of Local Barbers</h1>
         </div>
-      </section>
-    </>
-  );
+        <section className="barberShopList">
+          <div className="listOfBarbers">
+            {array.map(businesses => (
+              <Barber key={businesses.id} props={props} barbershops={businesses} />
+            ))}
+          </div>
+        </section>
+      </>
+    );
+  }
 };

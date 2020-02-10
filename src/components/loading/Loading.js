@@ -1,9 +1,9 @@
 import React from "react";
 
-export default ({ props, loading }) => {
+export default () => {
   return (
     <>
-      <h2>Loading...</h2>
+      <img src="/spinner.gif" alt="spinner" />
     </>
   );
 };

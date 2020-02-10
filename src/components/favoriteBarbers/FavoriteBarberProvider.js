@@ -53,7 +53,8 @@ export const FavoriteBarberShopProvider = props => {
         addFavoriteBarberShop,
         editFavoriteBarberShop,
         deleteFavoriteBarberShop
-      }}>
+      }}
+    >
       {props.children}
     </FavoriteBarberShopContext.Provider>
   );

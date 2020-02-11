@@ -38,6 +38,10 @@
   max-height: 500px;
   overflow-y: auto;
 }
+.create-review-position {
+  position: relative;
+  left: 10px;
+}
 .dropdown-backdrop {
   position: static;
   z-index: -1;
@@ -63,4 +67,10 @@
   justify-content: space-between;
 }
 .register-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-title {
+  position: relative;
+  left: 10px;
 }

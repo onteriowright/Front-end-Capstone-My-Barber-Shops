@@ -16,7 +16,7 @@ export const StatesDataProvider = props => {
   }, []);
 
   useEffect(() => {
-    console.log("Statses State Changed");
+    console.log("States State Changed");
     // console.log(states);
   }, [states]);
 
@@ -24,7 +24,8 @@ export const StatesDataProvider = props => {
     <StatesContext.Provider
       value={{
         states
-      }}>
+      }}
+    >
       {props.children}
     </StatesContext.Provider>
   );

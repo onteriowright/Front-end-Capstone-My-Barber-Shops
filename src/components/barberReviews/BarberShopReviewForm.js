@@ -41,6 +41,7 @@ export default props => {
 
   const constructNewReviews = () => {
     if (barberReview.name === "") {
+      console.log(barberReview.name);
       window.alert("Please enter Review");
     } else {
       if (editMode) {
@@ -86,7 +87,7 @@ export default props => {
       <fieldset>
         <div className="form-group">
           <label htmlFor="barberShop">Location: </label>
-          <select name="barberShop" className="form-control" proptype="text" value={foundShopReview.shopName} onChange={handleControlledInputChange}>
+          <select name="barberShop" className="form-control" proptype="text" value={barberReview.shopName} onChange={handleControlledInputChange}>
             <option value="0">Select a Barbershop</option>
             {foundShopReview.map(shop => (
               <option key={shop.id} value={shop.shopName}>

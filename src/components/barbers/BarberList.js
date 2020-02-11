@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Barber from "./Barber";
 import { BarberShopContext } from "../barbers/BarberShopProvider";
 import Loading from "../loading/Loading";
+import PopularBarberList from "../popularBarbers/PopularBarberList";
 
 export default props => {
   const { barberShops, loading } = useContext(BarberShopContext);
@@ -9,9 +10,12 @@ export default props => {
 
   if (array === undefined) {
     return (
-      <div className="loading">
-        <h1>Welcome To My Barber Shops</h1>
-      </div>
+      <>
+        <div className="loading">
+          <h1>Welcome To My Barber Shops</h1>
+          {/* <PopularBarberList /> */}
+        </div>
+      </>
     );
   } else {
     const sortedRatings = array.sort((a, b) => b.rating - a.rating);

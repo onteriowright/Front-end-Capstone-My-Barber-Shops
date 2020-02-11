@@ -28,15 +28,19 @@
   flex-wrap: wrap;
 }
 .barberForm {
-  max-width: 250px;
+  max-width: 350px;
   max-height: 190px;
-  margin-left: 10px;
+  margin: auto;
 }
 .barberShopList {
   padding: 5px;
   margin-top: 45px;
   max-height: 500px;
   overflow-y: auto;
+}
+.create-review-position {
+  position: relative;
+  left: 10px;
 }
 .dropdown-backdrop {
   position: static;
@@ -61,4 +65,12 @@
 }
 .review-btns {
   justify-content: space-between;
+}
+.register-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-title {
+  position: relative;
+  left: 10px;
 }

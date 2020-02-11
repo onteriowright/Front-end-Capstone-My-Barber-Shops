@@ -57,28 +57,34 @@ const Register = props => {
 
   return (
     <main>
-      <form className="form--login registerContainer" onSubmit={handleRegister}>
+      <form className="form--login registerContainer barberForm" onSubmit={handleRegister}>
         <h1 className="h3 mb-3 font-weight-normal registerHeader">Please Register for My Barber Shops</h1>
         <fieldset className="registerUserContainer">
           <label htmlFor="userName"> Username </label>
-          <input ref={userName} type="text" name="userName" className="form-control registerUser" placeholder="Username" required autoFocus />
+          <input ref={userName} type="text" name="userName" className="form-control registerUser" placeholder="Enter username..." required autoFocus />
         </fieldset>
         <fieldset className="registerEmailContainer">
           <label htmlFor="inputEmail"> Email address </label>
-          <input ref={email} type="email" name="email" className="form-control registerEmail" placeholder="Email address" required />
+          <input ref={email} type="email" name="email" className="form-control registerEmail" placeholder="Enter email address..." required />
         </fieldset>
         <fieldset className="registerPassContainer">
           <label htmlFor="inputPassword"> Password </label>
-          <input ref={password} type="password" name="password" className="form-control registerPass" placeholder="Password" required />
+          <input ref={password} type="password" name="password" className="form-control registerPass" placeholder="Enter password..." required />
         </fieldset>
         <fieldset className="confirmPassContainer">
           <label htmlFor="verifyPassword"> Verify Password </label>
-          <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control confirmPass" placeholder="Verify password" required />
+          <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control confirmPass" placeholder="Enter password..." required />
         </fieldset>
         <fieldset>
-          <button className="btn btn-primary registerButton" type="submit">
-            Sign up
-          </button>
+          <section className="register-btn">
+            <button className="btn btn-primary registerButton btn-sm" type="submit">
+              Sign up
+            </button>
+            <button onClick={() => props.history.push("/login")} className="btn btn-secondary btn-sm">
+              {" "}
+              Back
+            </button>
+          </section>
         </fieldset>
       </form>
     </main>

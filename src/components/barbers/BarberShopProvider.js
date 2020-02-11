@@ -22,10 +22,10 @@ export const BarberShopProvider = props => {
     )
       .then(res => res.json())
       .then(setBarberShops)
-      .catch(err => err)
       .then(() => {
         setLoading(false);
-      });
+      })
+      .catch(err => err);
   };
 
   useEffect(() => {

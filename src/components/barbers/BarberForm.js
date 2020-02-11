@@ -39,6 +39,8 @@ export default props => {
               evt.preventDefault();
               if (city.current.value !== "" && state.current.value !== "0") {
                 getBarberShops(city.current.value, state.current.value).then(() => props.history.push("/"));
+              } else {
+                window.alert("Please enter city and state!");
               }
             }}
             className="btn btn-primary btn-sm"

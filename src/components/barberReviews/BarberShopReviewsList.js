@@ -4,8 +4,6 @@ import BarberShopReview from "../barberReviews/BarberShopReviews";
 
 export default props => {
   const { barberReviews } = useContext(BarberReviewContext);
-  // const activeUserId = parseInt(localStorage.getItem("barber_user"));
-  // const barberShopsReviewsOfActiveUser = barberReviews.filter(user => user.userId === activeUserId) || {};
 
   return (
     <>

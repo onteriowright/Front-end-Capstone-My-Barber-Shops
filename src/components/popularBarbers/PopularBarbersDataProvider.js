@@ -25,28 +25,13 @@ export const PopularBarberShopProvider = props => {
       });
   };
 
-  const [locations, setLocations] = useState({
-    currentLocation: { lat: 0, lng: 0 },
-    loading: true
-  });
-
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
-      position => {
-        const { latitude, longitude } = position.coords;
-        setLocations({
-          currentLocation: { lat: latitude, lng: longitude },
-          loading: false
-        });
-        getPopularBarberShops(latitude, longitude);
-      },
-      () => setLocations({ loading: false })
-    );
+    navigator.geolocation.getCurrentPosition(position => {
+      const { latitude, longitude } = position.coords;
+
+      getPopularBarberShops(latitude, longitude);
+    });
   }, []);
-
-  useEffect(() => {
-    console.log("Popular Barbershop State Changed!!!");
-  }, [locations]);
 
   return (
     <PopularBarberShopContext.Provider

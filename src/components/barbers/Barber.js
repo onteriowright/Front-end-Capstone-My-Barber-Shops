@@ -22,14 +22,14 @@ export default ({ barbershops, props }) => {
             <img className="imageSize" src={barbershops.image_url} alt="barbershop" />
           )}
         </div>
-        <div className="barberCardInfo">{barbershops.display_phone}</div>
+        <div className="barberCardInfo">{barbershops.display_phone === "" ? "Sorry! No phone number provided" : barbershops.display_phone}</div>
         <div className="barberCardInfo">{barbershops.location.city}</div>
         <div className="barberCardInfo">
           {barbershops.location.display_address[0]}, {barbershops.location.display_address[1]}
         </div>
         <div className="barberCardInfo"></div>
         <button
-          className="btn btn-primary btn-sm"
+          className="btn btn-primary btn-sm bottom-btn"
           onClick={() =>
             addFavoriteBarberShop({
               shopId: barbershops.id,

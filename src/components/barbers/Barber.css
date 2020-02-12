@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap");
 
 .imageSize {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   text-align: center;
 }
@@ -18,6 +18,12 @@
   text-align: center;
   margin: 8px;
   max-height: 550px;
+}
+.barberCardInfo {
+  margin: 10px;
+}
+.bottom-btn {
+  margin: 10px;
 }
 
 .shopTitle {

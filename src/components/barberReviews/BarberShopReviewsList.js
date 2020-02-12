@@ -4,18 +4,16 @@ import BarberShopReview from "../barberReviews/BarberShopReviews";
 
 export default props => {
   const { barberReviews } = useContext(BarberReviewContext);
-  const activeUserId = parseInt(localStorage.getItem("barber_user"));
-  const barberShopsReviewsOfActiveUser = barberReviews.filter(user => user.userId === activeUserId) || {};
 
   return (
     <>
-      <h3 className="shop-title">Barber Shops</h3>
+      <h3 className="shop-title">Barber Shop Reviews</h3>
       <button className="btn btn-primary btn-sm create-review-position" onClick={() => props.history.push("/favoriteBarberShops/create")}>
         Create Review
       </button>
       <section className="barberShopList">
         <div className="listOfBarbers">
-          {barberShopsReviewsOfActiveUser.map(barbershop => (
+          {barberReviews.map(barbershop => (
             <BarberShopReview key={barbershop.id} props={props} favoriteBarberShopsReviews={barbershop} />
           ))}
         </div>

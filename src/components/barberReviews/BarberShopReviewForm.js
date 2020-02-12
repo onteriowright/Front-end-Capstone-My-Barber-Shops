@@ -8,7 +8,13 @@ export default props => {
 
   const [barberReview, setReviews] = useState({});
 
-  const reviewCreated = useRef(null);
+  const barbershopReview = useRef(null);
+
+  const dateReviewCreated = useRef(null);
+
+  const shopName = useRef(null);
+
+  const shopLocation = useRef(null);
 
   const activeUserId = parseInt(localStorage.getItem("barber_user"));
 
@@ -40,22 +46,30 @@ export default props => {
   }, [barberReviews]);
 
   const constructNewReviews = () => {
-    if (barberReview.name === "") {
-      window.alert("Please enter Review");
+    if (barbershopReview.current.value === "") {
+      window.alert("Please enter review");
+    } else if (dateReviewCreated.current.value === "") {
+      window.alert("Please enter date");
+    } else if (shopName.current.value === "") {
+      window.alert("Please enter name of shop");
+    } else if (shopLocation.current.value === "") {
+      window.alert("Please enter shop location");
     } else {
       if (editMode) {
         editBarberShopReviews({
           id: barberReview.id,
-          reviews: barberReview.name,
-          dateCreated: reviewCreated.current.value,
-          shopName: barberReview.barberShop,
+          reviews: barbershopReview.current.value,
+          dateCreated: dateReviewCreated.current.value,
+          shopName: shopName.current.value,
+          location: shopLocation.current.value,
           userId: parseInt(localStorage.getItem("barber_user"))
         }).then(() => props.history.push("/shopReviews"));
       } else {
         addBarberReviews({
           reviews: barberReview.name,
-          dateCreated: reviewCreated.current.value,
+          dateCreated: dateReviewCreated.current.value,
           shopName: barberReview.barberShop,
+          location: barberReview.location,
           userId: parseInt(localStorage.getItem("barber_user"))
         }).then(() => props.history.push("/shopReviews"));
       }
@@ -71,6 +85,7 @@ export default props => {
           <textarea
             type="text"
             name="name"
+            ref={barbershopReview}
             required
             autoFocus
             cols="40"
@@ -86,7 +101,7 @@ export default props => {
       <fieldset>
         <div className="form-group">
           <label htmlFor="barberShop">Location: </label>
-          <select name="barberShop" className="form-control" proptype="text" value={barberReview.shopName} onChange={handleControlledInputChange}>
+          <select name="barberShop" ref={shopName} className="form-control" proptype="text" value={barberReview.shopName} onChange={handleControlledInputChange}>
             <option value="0">Select a Barbershop</option>
             {foundShopReview.map(shop => (
               <option key={shop.id} value={shop.shopName}>
@@ -99,8 +114,11 @@ export default props => {
       <fieldset>
         <div className="form-group">
           <label htmlFor="tasks">Review Date: </label>
-          <input type="date" name="date" ref={reviewCreated} required className="form-control" defaultValue={barberReview.dateCreated} onChange={handleControlledInputChange} />
+          <input type="date" name="date" ref={dateReviewCreated} required className="form-control" defaultValue={barberReview.dateCreated} onChange={handleControlledInputChange} />
         </div>
+      </fieldset>
+      <fieldset>
+        <input type="text" ref={shopLocation} className="form-control" proptype="varchar" placeholder="Enter Location" defaultValue={barberReview.location} />
       </fieldset>
       <div className="taskButtonContainer">
         <div className="form-btns">

@@ -14,7 +14,6 @@ export default props => {
         <div className="loading">
           <h1>Welcome To My Barber Shops</h1>
           <section className="popularBarberContainer">
-            <h4 className="popularShopHeading">Here are the top shops in your area</h4>
             <section className="popularBarbersPositon">
               <PopularBarberList {...props} />
             </section>

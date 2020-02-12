@@ -69,7 +69,7 @@ export default props => {
           reviews: barberReview.name,
           dateCreated: dateReviewCreated.current.value,
           shopName: barberReview.barberShop,
-          location: barberReview.location,
+          location: shopLocation.current.value,
           userId: parseInt(localStorage.getItem("barber_user"))
         }).then(() => props.history.push("/shopReviews"));
       }

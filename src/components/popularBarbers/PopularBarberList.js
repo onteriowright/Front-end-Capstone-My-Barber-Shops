@@ -18,11 +18,14 @@ export default props => {
     );
   } else {
     return (
-      <section className="listOfBarbers">
-        {popularArray.map(shop => (
-          <PopularBarber key={shop.id} props={props} locations={shop} />
-        ))}
-      </section>
+      <>
+        <h4 className="popularShopHeading">Here are the top shops in your area</h4>
+        <section className="listOfBarbers">
+          {popularArray.map(shop => (
+            <PopularBarber key={shop.id} props={props} locations={shop} />
+          ))}
+        </section>
+      </>
     );
   }
 };

@@ -44,7 +44,9 @@ export const PopularBarberShopProvider = props => {
     );
   }, []);
 
-  useEffect(() => {}, [locations]);
+  useEffect(() => {
+    console.log("Popular Barbershop State Changed!!!");
+  }, [locations]);
 
   return (
     <PopularBarberShopContext.Provider

@@ -29,14 +29,6 @@ export const BarberShopProvider = props => {
   };
 
   useEffect(() => {
-    let city = "";
-    let state = "";
-    if (city !== "" && state !== "0") {
-      getBarberShops(city, state);
-    }
-  }, []);
-
-  useEffect(() => {
     console.log("Barber Shop State Changed");
     // console.log(barberShops);
   }, [barberShops]);

@@ -48,7 +48,7 @@ export default props => {
             Search
           </button>
           <button onClick={() => props.history.push("/shopReviews")} className="btn btn-dark btn-sm">
-            View My Reviews
+            View Reviews
           </button>
         </div>
       </form>

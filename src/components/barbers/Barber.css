@@ -6,8 +6,20 @@
   border-radius: 50%;
   text-align: center;
 }
+.imageSize-popular {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+}
 .barberCards {
   flex-basis: 38%;
+  text-align: center;
+  margin: 8px;
+  max-height: 550px;
+}
+.barberCards-popular {
+  flex-basis: 28%;
   text-align: center;
   margin: 8px;
   max-height: 550px;
@@ -62,6 +74,18 @@
 .loading {
   text-align: center;
   margin-top: 150px;
+}
+.popularBarberContainer {
+  margin-top: 30px;
+}
+.popularShopHeading {
+  text-decoration-line: underline;
+}
+.popularBarbersPositon {
+  margin-top: 50px;
+}
+.popularBarbersLoading {
+  /* margin-bottom: 500px; */
 }
 .review-btns {
   justify-content: space-between;

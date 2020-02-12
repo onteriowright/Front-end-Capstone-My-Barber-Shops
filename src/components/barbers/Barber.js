@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import { FavoriteBarberShopContext } from "../favoriteBarbers/FavoriteBarberProvider";
 
 export default ({ barbershops, props }) => {

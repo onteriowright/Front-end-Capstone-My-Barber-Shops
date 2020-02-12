@@ -7,11 +7,10 @@ export default ({ barbershops, props }) => {
   return (
     <>
       <section className="barberCards">
-        <div className="barberCardInfo">
-          <h3>{barbershops.name}</h3>
+        <div className="barberCardInfo shopTitle">
+          <p className="shopTitle">{barbershops.name}</p>
+          <p className="barberCardInfo">{barbershops.rating} Star</p>
         </div>
-        <div className="barberCardInfo">{barbershops.location.city}</div>
-        <div className="barberCardInfo">Shop Rated {barbershops.rating}</div>
         <div className="barberCardInfo">
           {barbershops.image_url === "" ? (
             <img
@@ -23,10 +22,12 @@ export default ({ barbershops, props }) => {
             <img className="imageSize" src={barbershops.image_url} alt="barbershop" />
           )}
         </div>
-        <div className="barberCardInfo">Contact {barbershops.display_phone}</div>
-        <div className="barberCardInfo">Address</div>
-        <div className="barberCardInfo">{barbershops.location.display_address[0]}</div>
-        <div className="barberCardInfo">{barbershops.location.display_address[1]}</div>
+        <div className="barberCardInfo">{barbershops.display_phone}</div>
+        <div className="barberCardInfo">{barbershops.location.city}</div>
+        <div className="barberCardInfo">
+          {barbershops.location.display_address[0]}, {barbershops.location.display_address[1]}
+        </div>
+        <div className="barberCardInfo"></div>
         <button
           className="btn btn-primary btn-sm"
           onClick={() =>

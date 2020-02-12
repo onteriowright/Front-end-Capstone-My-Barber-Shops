@@ -13,13 +13,22 @@
   text-align: center;
 }
 .barberCards {
-  flex-basis: 38%;
+  border: 1px solid lightgrey;
+  flex-basis: 23.5%;
   text-align: center;
   margin: 8px;
   max-height: 550px;
 }
+
+.shopTitle {
+  background-color: lightgrey;
+  padding: 1rem;
+  margin: 0rem;
+  font-weight: bold;
+}
+
 .barberCards-popular {
-  flex-basis: 28%;
+  flex-basis: 23.5%;
   text-align: center;
   margin: 8px;
   max-height: 550px;
@@ -29,9 +38,6 @@
   border: 1px solid;
   flex-basis: 49%;
   text-align: center;
-  margin: 8px;
-}
-.barberCardInfo {
   margin: 8px;
 }
 .listOfBarbers {

@@ -41,7 +41,6 @@ export default props => {
 
   const constructNewReviews = () => {
     if (barberReview.name === "") {
-      console.log(barberReview.name);
       window.alert("Please enter Review");
     } else {
       if (editMode) {

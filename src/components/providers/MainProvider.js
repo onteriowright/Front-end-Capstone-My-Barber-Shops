@@ -4,17 +4,20 @@ import { FavoriteBarberShopProvider } from "../favoriteBarbers/FavoriteBarberPro
 import { BarberShopProvider } from "../barbers/BarberShopProvider";
 import { BarberShopReviewProvider } from "../barberReviews/BarberShopReviewProvider";
 import { StatesDataProvider } from "../states/StateDataProvider";
+import { PopularBarberShopProvider } from "../popularBarbers/PopularBarbersDataProvider";
 
 export default props => {
   return (
-    <StatesDataProvider>
-      <BarberShopProvider>
-        <BarberShopReviewProvider>
-          <UserDataProvider>
-            <FavoriteBarberShopProvider>{props.children}</FavoriteBarberShopProvider>
-          </UserDataProvider>
-        </BarberShopReviewProvider>
-      </BarberShopProvider>
-    </StatesDataProvider>
+    <PopularBarberShopProvider>
+      <StatesDataProvider>
+        <BarberShopProvider>
+          <BarberShopReviewProvider>
+            <UserDataProvider>
+              <FavoriteBarberShopProvider>{props.children}</FavoriteBarberShopProvider>
+            </UserDataProvider>
+          </BarberShopReviewProvider>
+        </BarberShopProvider>
+      </StatesDataProvider>
+    </PopularBarberShopProvider>
   );
 };

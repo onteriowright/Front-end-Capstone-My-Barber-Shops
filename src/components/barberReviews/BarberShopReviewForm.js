@@ -48,10 +48,10 @@ export default props => {
   const constructNewReviews = () => {
     if (barbershopReview.current.value === "") {
       window.alert("Please enter review");
+    } else if (shopName.current.value === "0") {
+      window.alert("Please select a shop from favorites");
     } else if (dateReviewCreated.current.value === "") {
       window.alert("Please enter date");
-    } else if (shopName.current.value === "") {
-      window.alert("Please enter name of shop");
     } else if (shopLocation.current.value === "") {
       window.alert("Please enter shop location");
     } else {

@@ -23,7 +23,9 @@ export default () => (
                     </MainProvider>
                   )}
                 />
-                <Route render={props => <ApplicationViews {...props} />} />
+                <section className="body">
+                  <Route render={props => <ApplicationViews {...props} />} />
+                </section>
               </>
             );
           } else {

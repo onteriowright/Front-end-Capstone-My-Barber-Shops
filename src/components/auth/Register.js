@@ -1,15 +1,10 @@
 import React, { useRef } from "react";
-// import "./Login.css";
 
 const Register = props => {
   const userName = useRef();
   const email = useRef();
   const password = useRef();
   const verifyPassword = useRef();
-
-  // if (localStorage.getItem("barber_user") === null) {
-  //   document.body.classList.add("logInBackground");
-  // }
 
   const existingUserCheck = () => {
     return fetch(`http://localhost:5000/users?email=${email.current.value}`)

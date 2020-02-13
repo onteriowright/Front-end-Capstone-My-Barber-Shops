@@ -9,7 +9,7 @@ export default ({ barbershops, props }) => {
       <section className="barberCards">
         <div className="barberCardInfo">
           <p className="shopTitle">{barbershops.name}</p>
-          <p className="barberCardInfo">{barbershops.rating} Star</p>
+          <p className="barberCardInfo">{barbershops.rating} Stars</p>
         </div>
         <div className="barberCardInfo">
           {barbershops.image_url === "" ? (

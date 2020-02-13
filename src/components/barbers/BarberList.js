@@ -6,7 +6,10 @@ import PopularBarberList from "../popularBarbers/PopularBarberList";
 
 export default props => {
   const { barberShops, loading } = useContext(BarberShopContext);
+
   const array = barberShops.businesses;
+
+  let sortedRatings = "";
 
   if (array === undefined) {
     return (
@@ -22,8 +25,7 @@ export default props => {
       </>
     );
   } else {
-    const sortedRatings = array.sort((a, b) => b.rating - a.rating);
-    sortedRatings.map(business => <Barber key={business.id} barbershops={business} />);
+    sortedRatings = array.sort((a, b) => b.rating - a.rating);
   }
 
   if (loading) {
@@ -40,7 +42,7 @@ export default props => {
         </div>
         <section className="barberShopList">
           <div className="listOfBarbers">
-            {array.map(businesses => (
+            {sortedRatings.map(businesses => (
               <Barber key={businesses.id} props={props} barbershops={businesses} />
             ))}
           </div>

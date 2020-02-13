@@ -42,8 +42,6 @@ export const BarberShopReviewProvider = props => {
   }, []);
 
   useEffect(() => {
-    console.log("Favorites Barber Shop State Changed");
-    // console.log(barberReviews);
   }, [barberReviews]);
 
   return (

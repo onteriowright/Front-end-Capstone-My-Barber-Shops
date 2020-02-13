@@ -44,7 +44,7 @@ export default ({ barbershops, props }) => {
             }).then(() => props.history.push("/favoriteBarberShops"))
           }
         >
-          Add Barber
+          Add Barbershop
         </button>
       </section>
     </>

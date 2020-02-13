@@ -8,10 +8,9 @@ export default ({ props, favoriteBarberShops }) => {
     <>
       <section className="barberCards">
         <div className="barberCardInfo">
-          <h3>{favoriteBarberShops.shopName}</h3>
+          <p className="shopTitle">{favoriteBarberShops.shopName} </p>
+          <p className="barberCardInfo">{favoriteBarberShops.rating} Star</p>
         </div>
-        <div className="barberCardInfo">{favoriteBarberShops.location}</div>
-        <div className="barberCardInfo">Rating: {favoriteBarberShops.rating}</div>
         <div className="barberCardInfo">
           {favoriteBarberShops.image === "" ? (
             <img
@@ -23,12 +22,14 @@ export default ({ props, favoriteBarberShops }) => {
             <img className="imageSize" src={favoriteBarberShops.image} alt="barbershop" />
           )}
         </div>
-        <div className="barberCardInfo">Contact {favoriteBarberShops.contact}</div>
-        <div className="barberCardInfo">Address</div>
-        <div className="barberCardInfo">{favoriteBarberShops.street}</div>
-        <div className="barberCardInfo">{favoriteBarberShops.cityStateZip}</div>
+        <div className="barberCardInfo">{favoriteBarberShops.contact === "" ? "Sorry! No phone number provided" : favoriteBarberShops.contact}</div>
+        <div className="barberCardInfo">{favoriteBarberShops.location}</div>
+        <div className="barberCardInfo">
+          {favoriteBarberShops.street}, {favoriteBarberShops.cityStateZip}
+        </div>
+
         <button
-          className="btn btn-danger btn-sm"
+          className="btn btn-danger btn-sm bottom-btn"
           onClick={() => {
             if (window.confirm("Are you sure you want to delete this shop?")) {
               deleteFavoriteBarberShop(favoriteBarberShops).then(() => props.history.push("/favoriteBarberShops"));

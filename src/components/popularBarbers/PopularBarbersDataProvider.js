@@ -29,7 +29,7 @@ export const PopularBarberShopProvider = props => {
     navigator.geolocation.getCurrentPosition(position => {
       const { latitude, longitude } = position.coords;
 
-      getPopularBarberShops(latitude, longitude);
+      // getPopularBarberShops(latitude, longitude);
     });
   }, []);
 

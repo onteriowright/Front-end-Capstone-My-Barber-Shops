@@ -7,7 +7,7 @@ export default ({ barbershops, props }) => {
   return (
     <>
       <section className="barberCards">
-        <div className="barberCardInfo shopTitle">
+        <div className="barberCardInfo">
           <p className="shopTitle">{barbershops.name}</p>
           <p className="barberCardInfo">{barbershops.rating} Star</p>
         </div>
@@ -46,7 +46,6 @@ export default ({ barbershops, props }) => {
         >
           Add Barber
         </button>
-        {/* <a href="">Click</a> */}
       </section>
     </>
   );

@@ -8,6 +8,7 @@ export default props => {
 
   const popularArray = popularShops.businesses;
 
+  // No shops dicovered nearby
   if (popularArray === undefined) {
     return (
       <>
@@ -17,6 +18,7 @@ export default props => {
       </>
     );
   } else {
+    // Once shops are discovered display and remove spinner
     return (
       <>
         <h4 className="popularShopHeading">Here are the top shops in your area</h4>

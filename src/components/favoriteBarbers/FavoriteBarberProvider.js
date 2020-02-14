@@ -5,12 +5,14 @@ export const FavoriteBarberShopContext = React.createContext();
 export const FavoriteBarberShopProvider = props => {
   const [favoriteBarberShops, setFavoriteBarberShops] = useState([]);
 
+  // Fetch favorites from DB
   const getFavoriteBarberShops = () => {
     return fetch("http://localhost:5000/favoriteBarberShops")
       .then(res => res.json())
       .then(setFavoriteBarberShops);
   };
 
+  // Add favorites to DB
   const addFavoriteBarberShop = barbershop => {
     return fetch("http://localhost:5000/favoriteBarberShops", {
       method: "POST",
@@ -21,6 +23,7 @@ export const FavoriteBarberShopProvider = props => {
     }).then(getFavoriteBarberShops);
   };
 
+  // Edit favorites from DB
   const editFavoriteBarberShop = barbershopObject => {
     return fetch(`http://localhost:5000/favoriteBarberShops/${barbershopObject.id}`, {
       method: "PUT",
@@ -31,21 +34,22 @@ export const FavoriteBarberShopProvider = props => {
     }).then(getFavoriteBarberShops);
   };
 
+  // Delete favorites from DB
   const deleteFavoriteBarberShop = barbershopId => {
     return fetch(`http://localhost:5000/favoriteBarberShops/${barbershopId.id}`, {
       method: "DELETE"
     }).then(getFavoriteBarberShops);
   };
 
+  // Fetch favorite shops on render
   useEffect(() => {
     getFavoriteBarberShops();
   }, []);
 
-  useEffect(() => {
-    console.log("Favorites Barber Shop State Changed");
-    // console.log(favoriteBarberShops);
-  }, [favoriteBarberShops]);
+  // Update favorites array on render
+  useEffect(() => {}, [favoriteBarberShops]);
 
+  // Make avaliable to other components
   return (
     <FavoriteBarberShopContext.Provider
       value={{

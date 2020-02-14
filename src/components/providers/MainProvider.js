@@ -6,6 +6,7 @@ import { BarberShopReviewProvider } from "../barberReviews/BarberShopReviewProvi
 import { StatesDataProvider } from "../states/StateDataProvider";
 import { PopularBarberShopProvider } from "../popularBarbers/PopularBarbersDataProvider";
 
+// One provider that wraps all providers
 export default props => {
   return (
     <PopularBarberShopProvider>

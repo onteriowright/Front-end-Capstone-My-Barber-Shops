@@ -5,12 +5,14 @@ export const BarberReviewContext = React.createContext();
 export const BarberShopReviewProvider = props => {
   const [barberReviews, setBarberReviews] = useState([]);
 
+  // Fetch reviews form DB
   const getBarberReviews = () => {
     return fetch("http://localhost:5000/barberShopReviews")
       .then(res => res.json())
       .then(setBarberReviews);
   };
 
+  // Add reviews to DB
   const addBarberReviews = reviews => {
     return fetch("http://localhost:5000/BarberShopReviews", {
       method: "POST",
@@ -21,6 +23,7 @@ export const BarberShopReviewProvider = props => {
     }).then(getBarberReviews);
   };
 
+  // Edit reviews in DB
   const editBarberShopReviews = barberShopReviewsObject => {
     return fetch(`http://localhost:5000/barberShopReviews/${barberShopReviewsObject.id}`, {
       method: "PUT",
@@ -31,6 +34,7 @@ export const BarberShopReviewProvider = props => {
     }).then(getBarberReviews);
   };
 
+  // Delete reviews from DB
   const deleteBarberReviews = barberShopReviews => {
     return fetch(`http://localhost:5000/barberShopReviews/${barberShopReviews.id}`, {
       method: "DELETE"
@@ -38,12 +42,14 @@ export const BarberShopReviewProvider = props => {
   };
 
   useEffect(() => {
+    // Fetch reviews on render
     getBarberReviews();
   }, []);
 
-  useEffect(() => {
-  }, [barberReviews]);
+  // Update review array on render
+  useEffect(() => {}, [barberReviews]);
 
+  // Make avaliable to other components
   return (
     <BarberReviewContext.Provider
       value={{
@@ -51,7 +57,8 @@ export const BarberShopReviewProvider = props => {
         addBarberReviews,
         editBarberShopReviews,
         deleteBarberReviews
-      }}>
+      }}
+    >
       {props.children}
     </BarberReviewContext.Provider>
   );

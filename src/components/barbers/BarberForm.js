@@ -36,6 +36,7 @@ export default props => {
             onClick={evt => {
               evt.preventDefault();
               if (city.current.value !== "" && state.current.value !== "0") {
+                // Fetch barbershops with city and state
                 getBarberShops(city.current.value, state.current.value).then(() => props.history.push("/"));
               } else {
                 window.alert("Please enter city and state!");

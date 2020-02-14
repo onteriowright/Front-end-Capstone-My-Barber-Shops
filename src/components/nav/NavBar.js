@@ -10,7 +10,7 @@ export default props => {
 
   return (
     <ul className="navbar">
-      <h3 className="navbar__message">Let's find you a shop {activeUser.userName}</h3>
+      <h3 className="navbar__message">Hello, {activeUser.userName}</h3>
       <div className="navbar_items_position">
         <Link style={{ textDecoration: "none" }} className="navbar__item" to="/">
           Home
@@ -18,6 +18,7 @@ export default props => {
         <Link style={{ textDecoration: "none" }} className="navbar__item" to="/favoriteBarberShops">
           Favorites
         </Link>
+        {/* only show log out btn when user is logged in */}
         {localStorage.getItem("barber_user") ? (
           <>
             <li className="navbar__item">

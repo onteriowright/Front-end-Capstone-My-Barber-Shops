@@ -39,9 +39,6 @@ export const PopularBarberShopProvider = props => {
     });
   }, []);
 
-  // Update popular shops on render
-  useEffect(() => {}, [popularShops]);
-
   // Make avaliable to other components
   return (
     <PopularBarberShopContext.Provider

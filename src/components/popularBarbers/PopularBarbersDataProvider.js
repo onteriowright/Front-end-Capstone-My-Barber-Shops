@@ -37,7 +37,6 @@ export const PopularBarberShopProvider = props => {
     <PopularBarberShopContext.Provider
       value={{
         popularShops,
-        getPopularBarberShops,
         loading
       }}
     >

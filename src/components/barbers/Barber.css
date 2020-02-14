@@ -63,6 +63,7 @@
   flex-wrap: wrap;
 }
 
+/* contol all form positions - center */
 .barberForm {
   max-width: 350px;
   max-height: 190px;

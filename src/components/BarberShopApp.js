@@ -13,6 +13,7 @@ export default () => (
     <section className="body-font">
       <Route
         render={() => {
+          // If user is logged in show navbar and app view
           if (localStorage.getItem("barber_user")) {
             return (
               <>
@@ -29,6 +30,7 @@ export default () => (
               </>
             );
           } else {
+            // If user is not logged in show login page
             return <Redirect to="/login" />;
           }
         }}

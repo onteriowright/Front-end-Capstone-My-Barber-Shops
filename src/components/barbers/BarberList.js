@@ -11,6 +11,7 @@ export default props => {
 
   let sortedRatings = "";
 
+  // No barbershop has been searched for show welcome and popular shops nearby
   if (array === undefined) {
     return (
       <>
@@ -25,9 +26,11 @@ export default props => {
       </>
     );
   } else {
+    // Once shops have been searched sort them by rating
     sortedRatings = array.sort((a, b) => b.rating - a.rating);
   }
 
+  // Show spinner while waiting for shops
   if (loading) {
     return (
       <div className="loading">
@@ -35,6 +38,7 @@ export default props => {
       </div>
     );
   } else {
+    // Once shops are recieved remove spinner and display shops
     return (
       <>
         <div className="listOfBarbersPlacement ">

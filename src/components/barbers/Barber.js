@@ -31,6 +31,7 @@ export default ({ barbershops, props }) => {
         <button
           className="btn btn-primary btn-sm bottom-btn"
           onClick={() =>
+            // create new object and send to DB for favorites
             addFavoriteBarberShop({
               shopId: barbershops.id,
               shopName: barbershops.name,

@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap");
 
 .imageSize {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.imageSize-popular {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   text-align: center;
 }
-.imageSize-popular {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  text-align: center;
-}
+
 .barberCards {
   border: 1px solid lightgrey;
   flex-basis: 23.5%;
@@ -19,16 +21,23 @@
   margin: 8px;
   max-height: 550px;
 }
+
 .barberCardInfo {
   margin: 10px;
 }
+
 .bottom-btn {
   margin: 10px;
 }
 
+.btn-bottom-review {
+  position: relative;
+  top: 15px;
+}
+
 .shopTitle {
   background-color: lightgrey;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 0rem;
   font-weight: bold;
 }
@@ -39,6 +48,7 @@
   margin: 8px;
   max-height: 550px;
 }
+
 .barberReviewCards {
   flex-wrap: wrap;
   border: 1px solid;
@@ -46,43 +56,58 @@
   text-align: center;
   margin: 8px;
 }
+
 .listOfBarbers {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+/* contol all form positions - center */
 .barberForm {
   max-width: 350px;
   max-height: 190px;
   margin: auto;
 }
+
 .barberShopList {
   padding: 5px;
   margin-top: 45px;
   max-height: 500px;
   overflow-y: auto;
 }
+
 .create-review-position {
   position: relative;
   left: 10px;
 }
+
 .dropdown-backdrop {
   position: static;
   z-index: -1;
 }
+
 .form-btns {
   display: flex;
   justify-content: space-between;
 }
+
+.favoriteBarberHeading {
+  margin-left: 10px;
+}
+
 .listOfBarbersPlacement {
   margin-top: 100px;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 .listOfBarbersHeading {
   text-align: center;
 }
+
 .loading {
   text-align: center;
   margin-top: 150px;
@@ -90,20 +115,66 @@
 .popularBarberContainer {
   margin-top: 30px;
 }
+
 .popularShopHeading {
   text-decoration-line: underline;
 }
+
 .popularBarbersPositon {
   margin-top: 50px;
 }
+
 .review-btns {
   justify-content: space-between;
 }
+
 .register-btn {
   display: flex;
   justify-content: space-between;
 }
+
 .shop-title {
   position: relative;
   left: 10px;
+}
+
+.shopName {
+  font-weight: bold;
+}
+
+.InfoBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.shopInformation {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.reviewsBtn {
+  align-content: baseline;
+}
+
+.registerUser {
+  margin-top: 15px;
+}
+
+.LoginRegisterContainer {
+  margin-top: 150px;
+}
+
+.signIn {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.barberForm__title {
+  font-size: 20px;
+}
+
+.save-review-btn {
+  position: relative;
+  top: 15px;
 }

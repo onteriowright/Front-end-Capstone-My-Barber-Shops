@@ -32,28 +32,26 @@ const Login = props => {
   };
 
   return (
-    <main className="loginContainer">
+    <main className="LoginRegisterContainer">
       <section>
-        <form className="form--login" onSubmit={handleLogin}>
+        <form className="form--login registerContainer barberForm" onSubmit={handleLogin}>
           <h1>My Barber Shops</h1>
-          <h3>Please sign in</h3>
-          <fieldset>
-            <label htmlFor="inputEmail"> Email address </label>
+          <p className="signIn">Please sign in</p>
+          <fieldset className="registerUser">
             <input ref={email} type="email" id="email" className="form-control" placeholder="Email address" required autoFocus />
           </fieldset>
-          <fieldset>
-            <label htmlFor="inputPassword"> Password </label>
+          <fieldset className="registerUser">
             <input ref={password} type="password" id="password" className="form-control" placeholder="Password" required />
           </fieldset>
-          <fieldset>
-            <button className="btn btn-primary btn-sm" type="submit">
+          <fieldset className="registerUser">
+            <button className="btn btn-primary btn-sm registerUser" type="submit">
               Sign in
             </button>
           </fieldset>
+          <section className="link--register registerUser">
+            <Link to="/register">Not a member yet?</Link>
+          </section>
         </form>
-      </section>
-      <section className="link--register">
-        <Link to="/register">Not a member yet?</Link>
       </section>
     </main>
   );

@@ -21,7 +21,7 @@ export default props => {
                 <div className="barberShopContainer">
                   <BarberForm {...props} />
                 </div>
-                <div className="barbershopListContainer">
+                <div className="barbershopListContainer barberListColor">
                   <BarberList {...props} />
                 </div>
               </section>
@@ -29,11 +29,13 @@ export default props => {
           );
         }}
       />
-      <Route exact path="/favoriteBarberShops" render={props => <FavoriteBarberList {...props} />} />
-      <Route exact path="/shopReviews" render={props => <BarberShopReviewsList {...props} />} />
-      <Route exact path="/shopReviews/:shopId(\d+)" render={props => <BarberShopReviewsList {...props} />} />
-      <Route exact path="/favoriteBarberShops/create" render={props => <BarberShopReviewForm {...props} />} />
-      <Route exact path="/favoriteBarberShops/edit/:shopId(\d+)" render={props => <BarberShopReviewForm {...props} />} />
+      <section className="main-content">
+        <Route exact path="/favoriteBarberShops" render={props => <FavoriteBarberList {...props} />} />
+        <Route exact path="/shopReviews" render={props => <BarberShopReviewsList {...props} />} />
+        <Route exact path="/shopReviews/:shopId(\d+)" render={props => <BarberShopReviewsList {...props} />} />
+        <Route exact path="/favoriteBarberShops/create" render={props => <BarberShopReviewForm {...props} />} />
+        <Route exact path="/favoriteBarberShops/edit/:shopId(\d+)" render={props => <BarberShopReviewForm {...props} />} />
+      </section>
     </MainProvider>
   );
 };

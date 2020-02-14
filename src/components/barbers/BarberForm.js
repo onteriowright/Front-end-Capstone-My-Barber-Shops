@@ -12,17 +12,15 @@ export default props => {
   return (
     <>
       <form className="barberForm dropdown-backdrop">
-        <h4 className="barberForm__title">Search Barbers By Location</h4>
+        <p className="barberForm__title">Search Barbers By Location</p>
         <fieldset>
           <div className="form-group-lg">
-            <label htmlFor="name">City: </label>
-            <input type="text" name="name" required autoFocus className="form-control" proptype="varchar" placeholder="Enter City" ref={city} />
+            <input type="text" name="name" required autoFocus className="form-control registerUser" proptype="varchar" placeholder="Enter City" ref={city} />
           </div>
         </fieldset>
         <fieldset>
           <div className="form-group">
-            <label htmlFor="shopLocationId">State: </label>
-            <select name="shopLocationId" ref={state} className="form-control" proptype="int">
+            <select name="shopLocationId" ref={state} className="form-control registerUser" proptype="int">
               <option value="0">Select a state</option>
               {states.map(state => (
                 <option key={state.id} value={state.name}>

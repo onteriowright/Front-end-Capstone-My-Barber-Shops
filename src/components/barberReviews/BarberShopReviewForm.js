@@ -48,10 +48,10 @@ export default props => {
   const constructNewReviews = () => {
     if (barbershopReview.current.value === "") {
       window.alert("Please enter review");
+    } else if (shopName.current.value === "0") {
+      window.alert("Please select a shop from favorites");
     } else if (dateReviewCreated.current.value === "") {
       window.alert("Please enter date");
-    } else if (shopName.current.value === "") {
-      window.alert("Please enter name of shop");
     } else if (shopLocation.current.value === "") {
       window.alert("Please enter shop location");
     } else {
@@ -81,7 +81,6 @@ export default props => {
       <h3 className="barberReviewForm__title">{editMode ? "Update Review" : "Save Review"}</h3>
       <fieldset>
         <div className="form-group">
-          <label htmlFor="name">Review </label>
           <textarea
             type="text"
             name="name"
@@ -100,9 +99,8 @@ export default props => {
       </fieldset>
       <fieldset>
         <div className="form-group">
-          <label htmlFor="barberShop">Location: </label>
           <select name="barberShop" ref={shopName} className="form-control" proptype="text" value={barberReview.shopName} onChange={handleControlledInputChange}>
-            <option value="0">Select a Barbershop</option>
+            <option value="0">Select a Barbershop...</option>
             {foundShopReview.map(shop => (
               <option key={shop.id} value={shop.shopName}>
                 {shop.shopName}
@@ -113,8 +111,16 @@ export default props => {
       </fieldset>
       <fieldset>
         <div className="form-group">
-          <label htmlFor="tasks">Review Date: </label>
-          <input type="date" name="date" ref={dateReviewCreated} required className="form-control" defaultValue={barberReview.dateCreated} onChange={handleControlledInputChange} />
+          <input
+            type="date"
+            placeholder="Enter date..."
+            name="date"
+            ref={dateReviewCreated}
+            required
+            className="form-control"
+            defaultValue={barberReview.dateCreated}
+            onChange={handleControlledInputChange}
+          />
         </div>
       </fieldset>
       <fieldset>
@@ -128,11 +134,11 @@ export default props => {
               clickEvent.preventDefault();
               constructNewReviews();
             }}
-            className="btn btn-primary btn-sm"
+            className="btn btn-primary btn-sm btn-bottom-review"
           >
             {editMode ? "Save Updates" : "Save Review"}
           </button>
-          <button className="btn btn-dark btn-sm" onClick={() => props.history.push("/shopReviews")}>
+          <button className="btn btn-dark btn-sm btn-bottom-review" onClick={() => props.history.push("/shopReviews")}>
             Close
           </button>
         </div>

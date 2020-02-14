@@ -5,10 +5,10 @@ export default ({ locations }) => {
     <>
       <section className="barberCards-popular">
         <div className="barberCardInfo">
-          <h4>{locations.name}</h4>
+          <p className="shopTitle">{locations.name}</p>
+          <div>{locations.rating} Stars</div>
         </div>
-        <div className="barberCardInfo">{locations.location.city}</div>
-        <div className="barberCardInfo">Shop Rated {locations.rating}</div>
+
         <div className="barberCardInfo">
           {locations.image_url === "" ? (
             <img
@@ -20,6 +20,7 @@ export default ({ locations }) => {
             <img className="imageSize-popular" src={locations.image_url} alt="barbershop" />
           )}
         </div>
+        <div className="barberCardInfo">{locations.location.city}</div>
       </section>
     </>
   );

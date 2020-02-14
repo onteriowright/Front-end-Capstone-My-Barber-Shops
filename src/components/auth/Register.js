@@ -1,15 +1,10 @@
 import React, { useRef } from "react";
-// import "./Login.css";
 
 const Register = props => {
   const userName = useRef();
   const email = useRef();
   const password = useRef();
   const verifyPassword = useRef();
-
-  // if (localStorage.getItem("barber_user") === null) {
-  //   document.body.classList.add("logInBackground");
-  // }
 
   const existingUserCheck = () => {
     return fetch(`http://localhost:5000/users?email=${email.current.value}`)
@@ -56,31 +51,27 @@ const Register = props => {
   };
 
   return (
-    <main>
+    <main className="LoginRegisterContainer ">
       <form className="form--login registerContainer barberForm" onSubmit={handleRegister}>
-        <h1 className="h3 mb-3 font-weight-normal registerHeader">Please Register for My Barber Shops</h1>
-        <fieldset className="registerUserContainer">
-          <label htmlFor="userName"> Username </label>
+        <h1 className="registerHeader">Please register new user</h1>
+        <fieldset className="registerUser">
           <input ref={userName} type="text" name="userName" className="form-control registerUser" placeholder="Enter username..." required autoFocus />
         </fieldset>
-        <fieldset className="registerEmailContainer">
-          <label htmlFor="inputEmail"> Email address </label>
+        <fieldset className="registerUser">
           <input ref={email} type="email" name="email" className="form-control registerEmail" placeholder="Enter email address..." required />
         </fieldset>
-        <fieldset className="registerPassContainer">
-          <label htmlFor="inputPassword"> Password </label>
+        <fieldset className="registerUser">
           <input ref={password} type="password" name="password" className="form-control registerPass" placeholder="Enter password..." required />
         </fieldset>
-        <fieldset className="confirmPassContainer">
-          <label htmlFor="verifyPassword"> Verify Password </label>
-          <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control confirmPass" placeholder="Enter password..." required />
+        <fieldset className="registerUser">
+          <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control confirmPass" placeholder="Enter password again..." required />
         </fieldset>
         <fieldset>
           <section className="register-btn">
-            <button className="btn btn-primary registerButton btn-sm" type="submit">
+            <button className="btn btn-primary registerButton btn-sm registerUser" type="submit">
               Sign up
             </button>
-            <button onClick={() => props.history.push("/login")} className="btn btn-secondary btn-sm">
+            <button onClick={() => props.history.push("/login")} className="btn btn-secondary btn-sm registerUser">
               {" "}
               Back
             </button>

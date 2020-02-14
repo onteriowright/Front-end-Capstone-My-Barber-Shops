@@ -28,10 +28,7 @@ export const BarberShopProvider = props => {
       .catch(err => err);
   };
 
-  useEffect(() => {
-    console.log("Barber Shop State Changed");
-    // console.log(barberShops);
-  }, [barberShops]);
+  useEffect(() => {}, [barberShops]);
 
   return (
     <BarberShopContext.Provider

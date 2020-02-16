@@ -31,12 +31,14 @@ export const PopularBarberShopProvider = props => {
 
   // Get coordinates on render
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(position => {
-      const { latitude, longitude } = position.coords;
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
+        const { latitude, longitude } = position.coords;
 
-      // Pass coordinates to getPopularBarberShops method to get closet shops
-      getPopularBarberShops(latitude, longitude);
-    });
+        // Pass coordinates to getPopularBarberShops method to get closet shops
+        setTimeout(() => getPopularBarberShops(latitude, longitude), 1000);
+      });
+    }
   }, []);
 
   // Make avaliable to other components

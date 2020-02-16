@@ -52,7 +52,7 @@
 .barberReviewCards {
   flex-wrap: wrap;
   border: 1px solid;
-  flex-basis: 49%;
+  flex-basis: 55%;
   text-align: center;
   margin: 8px;
 }

@@ -8,7 +8,7 @@ export default props => {
   return (
     <>
       <h3 className="shop-title">Barber Shop Reviews</h3>
-      <button className="btn btn-primary btn-sm create-review-position" onClick={() => props.history.push("/favoriteBarberShops/create")}>
+      <button className="btn btn-primary btn-sm create-review-btn-position" onClick={() => props.history.push("/favoriteBarberShops/create")}>
         Create Review
       </button>
       <section className="barberShopList">

@@ -6,6 +6,7 @@ export const BarberShopProvider = props => {
   const [barberShops, setBarberShops] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  // Fetch Barbershop from yelp
   const getBarberShops = (city, state) => {
     // Assign true to loading
     setLoading(true);

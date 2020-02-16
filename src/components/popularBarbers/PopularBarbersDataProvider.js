@@ -6,7 +6,7 @@ export const PopularBarberShopProvider = props => {
   const [popularShops, setPopularShops] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // Fetch BarberShops from Yelp
+  // Fetch BarberShops from yelp
   const getPopularBarberShops = (lat, lng) => {
     // Assign true to loading
     setLoading(true);

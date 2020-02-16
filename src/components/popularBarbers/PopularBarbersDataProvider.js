@@ -35,7 +35,7 @@ export const PopularBarberShopProvider = props => {
       navigator.geolocation.getCurrentPosition(position => {
         const { latitude, longitude } = position.coords;
 
-        // Pass coordinates to getPopularBarberShops method to get closet shops
+        // Pass coordinates to getPopularBarberShops fetch call to get closet shops
         getPopularBarberShops(latitude, longitude);
       });
     }

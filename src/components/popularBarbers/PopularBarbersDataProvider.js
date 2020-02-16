@@ -6,7 +6,7 @@ export const PopularBarberShopProvider = props => {
   const [popularShops, setPopularShops] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // Fetch BarberShops from Yelp
+  // Fetch BarberShops from yelp
   const getPopularBarberShops = (lat, lng) => {
     // Assign true to loading
     setLoading(true);
@@ -36,7 +36,7 @@ export const PopularBarberShopProvider = props => {
         const { latitude, longitude } = position.coords;
 
         // Pass coordinates to getPopularBarberShops method to get closet shops
-        setTimeout(() => getPopularBarberShops(latitude, longitude), 1000);
+        getPopularBarberShops(latitude, longitude);
       });
     }
   }, []);

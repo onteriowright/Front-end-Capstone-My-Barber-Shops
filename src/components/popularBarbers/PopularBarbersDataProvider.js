@@ -36,7 +36,7 @@ export const PopularBarberShopProvider = props => {
         const { latitude, longitude } = position.coords;
 
         // Pass coordinates to getPopularBarberShops method to get closet shops
-        setTimeout(() => getPopularBarberShops(latitude, longitude), 1000);
+        getPopularBarberShops(latitude, longitude);
       });
     }
   }, []);

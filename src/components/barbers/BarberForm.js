@@ -37,7 +37,17 @@ export default props => {
               evt.preventDefault();
               if (city.current.value !== "" && state.current.value !== "0") {
                 // Fetch barbershops with city and state
-                getBarberShops(city.current.value, state.current.value).then(() => props.history.push("/"));
+                const capitalizeFirstLetterOfCity = word => {
+                  word = word.split(" ");
+                  for (let i = 0; i < word.length; i++) {
+                    word[i] = word[i][0].toUpperCase() + word[i].slice(1);
+                  }
+
+                  word = word.join(" ");
+                  return word;
+                };
+
+                getBarberShops(capitalizeFirstLetterOfCity(city.current.value), state.current.value).then(() => props.history.push("/"));
               } else {
                 window.alert("Please enter city and state!");
               }

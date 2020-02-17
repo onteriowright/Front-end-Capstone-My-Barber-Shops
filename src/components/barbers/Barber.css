@@ -52,7 +52,7 @@
 .barberReviewCards {
   flex-wrap: wrap;
   border: 1px solid;
-  flex-basis: 55%;
+  flex-basis: 58%;
   text-align: center;
   margin: 8px;
 }
@@ -77,7 +77,7 @@
   overflow-y: auto;
 }
 
-.create-review-position {
+.create-review-btn-position {
   position: relative;
   left: 10px;
 }

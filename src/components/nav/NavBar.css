@@ -1,20 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
+
 .navbar {
-  background-color: #000;
+  background-color: #363738;
   flex-wrap: nowrap;
   justify-content: left;
   position: sticky !important;
   top: 0 !important;
   z-index: 1;
 }
+
 .navbar__message {
   color: whitesmoke;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Lobster Two";
 }
+
 .navbar_items_position {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .navbar__item {
   position: relative;
   left: 180px;
@@ -25,6 +30,20 @@
   color: #fff;
   font-size: 18px;
 }
+
+.navbar__item:hover {
+  color: black;
+}
+
+.logoutButton {
+  background-color: #fff !important;
+}
+
+.logoutButton:hover {
+  background-color: black !important;
+  color: #fff !important;
+}
+
 @media (min-width: 1250px) {
   .navbar__item {
     position: relative;
@@ -37,6 +56,7 @@
     font-size: 18px;
   }
 }
+
 .navbar-text {
   color: whitesmoke;
   justify-content: left;

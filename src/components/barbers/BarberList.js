@@ -41,7 +41,7 @@ export default props => {
     // Once shops are recieved remove spinner and display shops
     return (
       <>
-        <div className="listOfBarbersPlacement ">
+        <div className="listOfBarbersPlacement">
           <h1 className="listOfBarbersHeading">List Of Local Barbers</h1>
         </div>
         <section className="barberShopList">

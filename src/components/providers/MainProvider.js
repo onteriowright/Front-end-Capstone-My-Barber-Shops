@@ -5,20 +5,23 @@ import { BarberShopProvider } from "../barbers/BarberShopProvider";
 import { BarberShopReviewProvider } from "../barberReviews/BarberShopReviewProvider";
 import { StatesDataProvider } from "../states/StateDataProvider";
 import { PopularBarberShopProvider } from "../popularBarbers/PopularBarbersDataProvider";
+import { ServicesDataProvider } from "../services/ServiceProvider";
 
 // One provider that wraps all providers
 export default props => {
   return (
-    <PopularBarberShopProvider>
-      <StatesDataProvider>
-        <BarberShopProvider>
-          <BarberShopReviewProvider>
-            <UserDataProvider>
-              <FavoriteBarberShopProvider>{props.children}</FavoriteBarberShopProvider>
-            </UserDataProvider>
-          </BarberShopReviewProvider>
-        </BarberShopProvider>
-      </StatesDataProvider>
-    </PopularBarberShopProvider>
+    <ServicesDataProvider>
+      <PopularBarberShopProvider>
+        <StatesDataProvider>
+          <BarberShopProvider>
+            <BarberShopReviewProvider>
+              <UserDataProvider>
+                <FavoriteBarberShopProvider>{props.children}</FavoriteBarberShopProvider>
+              </UserDataProvider>
+            </BarberShopReviewProvider>
+          </BarberShopProvider>
+        </StatesDataProvider>
+      </PopularBarberShopProvider>
+    </ServicesDataProvider>
   );
 };

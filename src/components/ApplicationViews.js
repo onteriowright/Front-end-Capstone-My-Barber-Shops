@@ -30,11 +30,17 @@ export default props => {
         }}
       />
       <section className="main-content">
-        <Route exact path="/favoriteBarberShops" render={props => <FavoriteBarberList {...props} />} />
+        <section className="main-content">
+          <Route exact path="/favoriteBarberShops" render={props => <FavoriteBarberList {...props} />} />
+        </section>
         <Route exact path="/shopReviews" render={props => <BarberShopReviewsList {...props} />} />
         <Route exact path="/shopReviews/:shopId(\d+)" render={props => <BarberShopReviewsList {...props} />} />
-        <Route exact path="/favoriteBarberShops/create" render={props => <BarberShopReviewForm {...props} />} />
-        <Route exact path="/favoriteBarberShops/edit/:shopId(\d+)" render={props => <BarberShopReviewForm {...props} />} />
+        <section className="reviewForm">
+          <Route exact path="/shopReviews/create" render={props => <BarberShopReviewForm {...props} />} />
+        </section>
+        <section className="reviewForm">
+          <Route exact path="/shopReviews/edit/:shopId(\d+)" render={props => <BarberShopReviewForm {...props} />} />
+        </section>
       </section>
     </MainProvider>
   );

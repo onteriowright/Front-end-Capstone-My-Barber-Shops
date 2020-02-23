@@ -35,7 +35,7 @@ const Login = props => {
     <main className="LoginRegisterContainer body-background">
       <section>
         <form className="form--login registerContainer barberForm loginForm" onSubmit={handleLogin}>
-          <h1>My Barber Shops</h1>
+          <h1>My Shops</h1>
           <p className="signIn">Please sign in</p>
           <fieldset className="registerUser">
             <input ref={email} type="email" id="email" className="form-control" placeholder="Email address" required autoFocus />

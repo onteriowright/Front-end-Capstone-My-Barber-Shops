@@ -36,7 +36,7 @@ export default ({ props, favoriteBarberShops }) => {
             }
           }}
         >
-          Remove Barber Shop
+          Remove Shop
         </button>
       </section>
     </>

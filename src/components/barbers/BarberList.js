@@ -16,7 +16,7 @@ export default props => {
     return (
       <>
         <div className="loading">
-          <h1>Welcome To My Barber Shops</h1>
+          <h1>Welcome To My Shops</h1>
           <section className="popularBarberContainer">
             <section className="popularBarbersPositon">
               <PopularBarberList {...props} />
@@ -42,7 +42,7 @@ export default props => {
     return (
       <>
         <div className="listOfBarbersPlacement">
-          <h1 className="listOfBarbersHeading">List Of Local Barbers</h1>
+          <h1 className="listOfBarbersHeading">List Of Local Shops</h1>
         </div>
         <section className="barberShopList">
           <div className="listOfBarbers">

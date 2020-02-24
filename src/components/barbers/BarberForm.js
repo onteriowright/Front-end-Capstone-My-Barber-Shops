@@ -36,7 +36,7 @@ export default props => {
         <fieldset>
           <div className="form-group">
             <select name="service" ref={service} className="form-control registerUser" proptype="int">
-              <option value="0">Select service</option>
+              <option value="0">Select a service</option>
               {services.map(service => (
                 <option key={service.id} value={service.name}>
                   {service.name}
@@ -51,7 +51,7 @@ export default props => {
             onClick={evt => {
               evt.preventDefault();
               if (city.current.value !== "" && state.current.value !== "0" && service.current.value !== "0") {
-                // Fetch barbershops with city and state
+                // Capitalize first letter of each word
                 const capitalizeFirstLetterOfCity = word => {
                   word = word.split(" ");
                   for (let i = 0; i < word.length; i++) {
@@ -61,8 +61,21 @@ export default props => {
                   word = word.join(" ");
                   return word;
                 };
+                // LowerCase first letter of each word
+                const lowerCaseFirstLetterOfService = word => {
+                  word = word.split(" ");
+                  for (let i = 0; i < word.length; i++) {
+                    word[i] = word[i][0].toLowerCase() + word[i].slice(1);
+                  }
 
-                getBarberShops(capitalizeFirstLetterOfCity(city.current.value), state.current.value, service.current.value).then(() => props.history.push("/"));
+                  word = word.join(" ");
+                  return word;
+                };
+
+                // Fetch barbershops with city and state
+                getBarberShops(capitalizeFirstLetterOfCity(city.current.value), state.current.value, lowerCaseFirstLetterOfService(service.current.value)).then(() =>
+                  props.history.push("/")
+                );
               } else {
                 window.alert("Please fill out all fields!");
               }

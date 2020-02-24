@@ -15,7 +15,8 @@
 }
 
 .barberCards {
-  /* border: 1px solid #5d5e60; */
+  background-color: #cce2e0;
+  border: 1px solid #5d5e60;
   flex-basis: 23.5%;
   text-align: center;
   margin: 8px;
@@ -49,6 +50,8 @@
 }
 
 .barberCards-popular {
+  background-color: #cce2e0;
+  border: 1px solid #5d5e60;
   flex-basis: 23.5%;
   text-align: center;
   margin: 8px;
@@ -57,8 +60,9 @@
 }
 
 .barberReviewCards {
+  background-color: #cce2e0;
   flex-wrap: wrap;
-  border: 1px solid;
+  border: 1px solid #5d5e60;
   flex-basis: 58%;
   text-align: center;
   margin: 8px;
@@ -93,7 +97,6 @@
 .reviewForm {
   height: 0;
   color: whitesmoke;
-  /* background-color: rgb(5, 5, 5); */
 }
 
 .dropdown-backdrop {

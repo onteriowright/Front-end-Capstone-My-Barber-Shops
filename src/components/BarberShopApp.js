@@ -10,7 +10,7 @@ import "./BarberShopApp.css";
 
 export default () => (
   <>
-    <section className="body-font">
+    <section className="body-font barberShopView">
       <Route
         render={() => {
           // If user is logged in show navbar and app view

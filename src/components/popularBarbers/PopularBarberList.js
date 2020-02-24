@@ -2,14 +2,17 @@ import React, { useContext } from "react";
 import { PopularBarberShopContext } from "./PopularBarbersDataProvider";
 import Loading from "../loading/Loading";
 import PopularBarber from "./PopularBarber";
+import PopularSalons from "./PopularSalons";
 
 export default props => {
-  const { popularShops } = useContext(PopularBarberShopContext);
+  const { popularShops, popularSalons } = useContext(PopularBarberShopContext);
 
-  const popularArray = popularShops.businesses;
+  const popularShopsArray = popularShops.businesses;
+
+  const popularSalonsArray = popularSalons.businesses;
 
   // No shops dicovered nearby
-  if (popularArray === undefined) {
+  if (popularShopsArray === undefined || popularSalonsArray === undefined) {
     return (
       <>
         <div className="loading">
@@ -23,8 +26,13 @@ export default props => {
       <>
         <h4 className="popularShopHeading">Here are the top shops in your area</h4>
         <section className="listOfBarbers">
-          {popularArray.map(shop => (
+          {popularShopsArray.map(shop => (
             <PopularBarber key={shop.id} props={props} locations={shop} />
+          ))}
+        </section>
+        <section className="listOfBarbers">
+          {popularSalonsArray.map(shop => (
+            <PopularSalons key={shop.id} props={props} salons={shop} />
           ))}
         </section>
       </>

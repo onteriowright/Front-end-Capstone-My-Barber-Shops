@@ -51,22 +51,22 @@ const Register = props => {
   };
 
   return (
-    <main className="LoginRegisterContainer ">
-      <form className="form--login registerContainer barberForm" onSubmit={handleRegister}>
+    <main className="LoginRegisterContainer body-background">
+      <form className="form--login registerContainer barberForm loginForm" onSubmit={handleRegister}>
         <h1 className="registerHeader">Please register new user</h1>
-        <fieldset className="registerUser">
+        <fieldset className="registerUser loginForm">
           <input ref={userName} type="text" name="userName" className="form-control registerUser" placeholder="Enter username..." required autoFocus />
         </fieldset>
-        <fieldset className="registerUser">
+        <fieldset className="registerUser loginForm">
           <input ref={email} type="email" name="email" className="form-control registerEmail" placeholder="Enter email address..." required />
         </fieldset>
-        <fieldset className="registerUser">
+        <fieldset className="registerUser loginForm">
           <input ref={password} type="password" name="password" className="form-control registerPass" placeholder="Enter password..." required />
         </fieldset>
-        <fieldset className="registerUser">
+        <fieldset className="registerUser loginForm">
           <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control confirmPass" placeholder="Enter password again..." required />
         </fieldset>
-        <fieldset>
+        <fieldset className="loginForm">
           <section className="register-btn">
             <button className="btn btn-primary registerButton btn-sm registerUser" type="submit">
               Sign up

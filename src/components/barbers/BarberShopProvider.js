@@ -7,12 +7,12 @@ export const BarberShopProvider = props => {
   const [loading, setLoading] = useState(false);
 
   // Fetch Barbershop from yelp
-  const getBarberShops = (city, state) => {
+  const getBarberShops = (city, state, service) => {
     // Assign true to loading
     setLoading(true);
 
     return fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?client_id=${process.env.REACT_APP_YELP_CLIENT_ID}&term=barbershop&location=${city},${state}&limit=50`,
+      `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?client_id=${process.env.REACT_APP_YELP_CLIENT_ID}&term=${service}&location=${city},${state}&limit=50`,
       {
         method: "GET",
         headers: {

@@ -2,4 +2,23 @@
 
 .body-font {
   font-family: "Source Sans Pro", sans-serif;
+  color: #2f2d2e;
+}
+
+.body-background {
+  background-color: #b9cfd4;
+  color: #5d5e60;
+  height: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+html {
+  background-image: url("https://assets.website-files.com/5af9f5a21bc1894c9f1a5799/5c3a721de76e084dd1f183a0__DSC5645-min2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }

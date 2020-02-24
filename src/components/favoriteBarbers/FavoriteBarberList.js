@@ -11,7 +11,7 @@ export default props => {
 
   return (
     <>
-      <h3 className="favoriteBarberHeading">Favorite Barber Shops</h3>
+      <h3 className="favoriteBarberHeading">Favorite Shops</h3>
       <section className="barberShopList">
         <div className="listOfBarbers">
           {favoriteBarberShopsOfActiveUser.map(barbershop => (

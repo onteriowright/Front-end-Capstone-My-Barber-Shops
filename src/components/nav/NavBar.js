@@ -23,7 +23,7 @@ export default props => {
           <>
             <li className="navbar__item">
               <button
-                className="logoutButton btn btn-secondary btn-sm"
+                className="logoutButton btn btn-sm"
                 onClick={e => {
                   e.preventDefault();
                   localStorage.removeItem("barber_user");

@@ -58,7 +58,7 @@ export default ({ props, favoriteBarberShopsReviews }) => {
           <div className="barberCardInfo">{favoriteBarberShopsReviews.reviews}</div>
           <div className="InfoBtns">
             <div className="editReviewBtn">
-              <button className="btn btn-dark btn-sm reviewsBtn" onClick={() => props.history.push(`/favoriteBarberShops/edit/${favoriteBarberShopsReviews.id}`)}>
+              <button className="btn btn-dark btn-sm reviewsBtn" onClick={() => props.history.push(`/shopReviews/edit/${favoriteBarberShopsReviews.id}`)}>
                 Edit Review
               </button>
             </div>

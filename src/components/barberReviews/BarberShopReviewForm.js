@@ -77,9 +77,9 @@ export default props => {
   };
 
   return (
-    <form className="barberForm dropdown-backdrop">
+    <form className="barberForm dropdown-backdrop loginForm">
       <h3 className="barberReviewForm__title">{editMode ? "Update Review" : "Save Review"}</h3>
-      <fieldset>
+      <fieldset className="loginForm">
         <div className="form-group">
           <textarea
             type="text"
@@ -97,10 +97,10 @@ export default props => {
           ></textarea>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset className="loginForm">
         <div className="form-group">
           <select name="barberShop" ref={shopName} className="form-control" proptype="text" value={barberReview.shopName} onChange={handleControlledInputChange}>
-            <option value="0">Select a Barbershop...</option>
+            <option value="0">Select a Shop...</option>
             {foundShopReview.map(shop => (
               <option key={shop.id} value={shop.shopName}>
                 {shop.shopName}
@@ -109,7 +109,7 @@ export default props => {
           </select>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset className="loginForm">
         <div className="form-group">
           <input
             type="date"
@@ -123,7 +123,7 @@ export default props => {
           />
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset className="loginForm">
         <input type="text" ref={shopLocation} className="form-control" proptype="varchar" placeholder="Enter Location" defaultValue={barberReview.location} />
       </fieldset>
       <div className="taskButtonContainer">

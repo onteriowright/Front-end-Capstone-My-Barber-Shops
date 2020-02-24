@@ -11,6 +11,9 @@ export default props => {
 
   const popularSalonsArray = popularSalons.businesses;
 
+  let sortRatingsBarberShops = "";
+  let sortedRatingsSalons = "";
+
   // No shops dicovered nearby
   if (popularShopsArray === undefined || popularSalonsArray === undefined) {
     return (
@@ -21,17 +24,20 @@ export default props => {
       </>
     );
   } else {
+    sortRatingsBarberShops = popularShopsArray.sort((a, b) => b.rating - a.rating);
+    sortedRatingsSalons = popularSalonsArray.sort((a, b) => b.rating - a.rating);
+
     // Once shops are discovered display and remove spinner
     return (
       <>
         <h4 className="popularShopHeading">Here are the top shops in your area</h4>
         <section className="listOfBarbers">
-          {popularShopsArray.map(shop => (
+          {sortRatingsBarberShops.map(shop => (
             <PopularBarber key={shop.id} props={props} locations={shop} />
           ))}
         </section>
         <section className="listOfBarbers">
-          {popularSalonsArray.map(shop => (
+          {sortedRatingsSalons.map(shop => (
             <PopularSalons key={shop.id} props={props} salons={shop} />
           ))}
         </section>

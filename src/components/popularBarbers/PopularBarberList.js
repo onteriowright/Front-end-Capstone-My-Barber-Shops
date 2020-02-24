@@ -24,6 +24,7 @@ export default props => {
       </>
     );
   } else {
+    // Sort popular shops based off ratings
     sortRatingsBarberShops = popularShopsArray.sort((a, b) => b.rating - a.rating);
     sortedRatingsSalons = popularSalonsArray.sort((a, b) => b.rating - a.rating);
 

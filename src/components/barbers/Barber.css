@@ -15,7 +15,7 @@
 }
 
 .barberCards {
-  background-color: #cce2e0;
+  background-color: #d6eeee;
   border: 1px solid #5d5e60;
   flex-basis: 23.5%;
   text-align: center;
@@ -50,7 +50,7 @@
 }
 
 .barberCards-popular {
-  background-color: #cce2e0;
+  background-color: #d6eeee;
   border: 1px solid #5d5e60;
   flex-basis: 23.5%;
   text-align: center;
@@ -60,7 +60,7 @@
 }
 
 .barberReviewCards {
-  background-color: #cce2e0;
+  background-color: #d6eeee;
   flex-wrap: wrap;
   border: 1px solid #5d5e60;
   flex-basis: 58%;
@@ -89,6 +89,10 @@
   overflow-y: auto;
 }
 
+.barberReviewFormPosition {
+  margin-top: 200px;
+}
+
 .create-review-btn-position {
   position: relative;
   left: 10px;
@@ -114,7 +118,7 @@
 }
 
 .listOfBarbersPlacement {
-  margin-top: 100px;
+  margin-top: 180px;
 }
 
 ::-webkit-scrollbar {

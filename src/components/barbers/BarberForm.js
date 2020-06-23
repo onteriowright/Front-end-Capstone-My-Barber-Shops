@@ -18,7 +18,16 @@ export default props => {
         <p className="barberForm__title">Search For Shops...</p>
         <fieldset>
           <div className="form-group-lg">
-            <input type="text" name="name" required autoFocus className="form-control registerUser" proptype="varchar" placeholder="Enter City" ref={city} />
+            <input
+              type="text"
+              name="name"
+              required
+              autoFocus
+              className="form-control registerUser"
+              proptype="varchar"
+              placeholder="Enter City"
+              ref={city}
+            />
           </div>
         </fieldset>
         <fieldset>
@@ -26,8 +35,8 @@ export default props => {
             <select name="shopLocation" ref={state} className="form-control registerUser" proptype="int">
               <option value="0">Select a state</option>
               {states.map(state => (
-                <option key={state.id} value={state.name}>
-                  {state.name}
+                <option key={state.id} value={state.state}>
+                  {state.state}
                 </option>
               ))}
             </select>
@@ -38,8 +47,8 @@ export default props => {
             <select name="service" ref={service} className="form-control registerUser" proptype="int">
               <option value="0">Select a service</option>
               {services.map(service => (
-                <option key={service.id} value={service.name}>
-                  {service.name}
+                <option key={service.id} value={service.service}>
+                  {service.service}
                 </option>
               ))}
             </select>
@@ -73,9 +82,11 @@ export default props => {
                 };
 
                 // Fetch barbershops with city and state
-                getBarberShops(capitalizeFirstLetterOfCity(city.current.value), state.current.value, lowerCaseFirstLetterOfService(service.current.value)).then(() =>
-                  props.history.push("/")
-                );
+                getBarberShops(
+                  capitalizeFirstLetterOfCity(city.current.value),
+                  state.current.value,
+                  lowerCaseFirstLetterOfService(service.current.value)
+                ).then(() => props.history.push("/"));
               } else {
                 window.alert("Please fill out all fields!");
               }
@@ -83,9 +94,6 @@ export default props => {
             className="btn btn-primary btn-sm"
           >
             Search
-          </button>
-          <button onClick={() => props.history.push("/shopReviews")} className="btn btn-dark btn-sm">
-            View Reviews
           </button>
         </div>
       </form>

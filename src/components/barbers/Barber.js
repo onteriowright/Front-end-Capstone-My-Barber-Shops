@@ -4,12 +4,103 @@ import { FavoriteBarberShopContext } from "../favoriteBarbers/FavoriteBarberProv
 export default ({ barbershops, props }) => {
   const { addFavoriteBarberShop } = useContext(FavoriteBarberShopContext);
 
+  let starRating = "";
+
+  if (
+    barbershops.rating === 5.0 ||
+    barbershops.rating === 5.1 ||
+    barbershops.rating === 5.2 ||
+    barbershops.rating === 5.3 ||
+    barbershops.rating === 5.4 ||
+    barbershops.rating === 5.5 ||
+    barbershops.rating === 5.6 ||
+    barbershops.rating === 5.7 ||
+    barbershops.rating === 5.8 ||
+    barbershops.rating === 5.9
+  ) {
+    starRating = (
+      <span role="img" aria-label="pic" className="barberCardInfo">
+        ⭐⭐⭐⭐⭐
+      </span>
+    );
+  } else if (
+    barbershops.rating === 4.0 ||
+    barbershops.rating === 4.1 ||
+    barbershops.rating === 4.2 ||
+    barbershops.rating === 4.3 ||
+    barbershops.rating === 4.4 ||
+    barbershops.rating === 4.5 ||
+    barbershops.rating === 4.6 ||
+    barbershops.rating === 4.7 ||
+    barbershops.rating === 4.8 ||
+    barbershops.rating === 4.9
+  ) {
+    starRating = (
+      <span role="img" aria-label="pic" className="barberCardInfo">
+        ⭐⭐⭐⭐
+      </span>
+    );
+  } else if (
+    barbershops.rating === 3.0 ||
+    barbershops.rating === 3.1 ||
+    barbershops.rating === 3.2 ||
+    barbershops.rating === 3.3 ||
+    barbershops.rating === 3.4 ||
+    barbershops.rating === 3.5 ||
+    barbershops.rating === 3.6 ||
+    barbershops.rating === 3.7 ||
+    barbershops.rating === 3.8 ||
+    barbershops.rating === 3.9
+  ) {
+    starRating = (
+      <span role="img" aria-label="pic" className="barberCardInfo">
+        ⭐⭐⭐
+      </span>
+    );
+  } else if (
+    barbershops.rating === 2.0 ||
+    barbershops.rating === 2.1 ||
+    barbershops.rating === 2.2 ||
+    barbershops.rating === 2.3 ||
+    barbershops.rating === 2.4 ||
+    barbershops.rating === 2.5 ||
+    barbershops.rating === 2.6 ||
+    barbershops.rating === 2.7 ||
+    barbershops.rating === 2.8 ||
+    barbershops.rating === 2.9
+  ) {
+    starRating = (
+      <span role="img" aria-label="pic" className="barberCardInfo">
+        ⭐⭐
+      </span>
+    );
+  } else if (
+    barbershops.rating === 1.0 ||
+    barbershops.rating === 1.1 ||
+    barbershops.rating === 1.2 ||
+    barbershops.rating === 1.3 ||
+    barbershops.rating === 1.4 ||
+    barbershops.rating === 1.5 ||
+    barbershops.rating === 1.6 ||
+    barbershops.rating === 1.7 ||
+    barbershops.rating === 1.8 ||
+    barbershops.rating === 1.9
+  ) {
+    starRating = (
+      <span role="img" aria-label="pic" className="barberCardInfo">
+        ⭐⭐
+      </span>
+    );
+  } else {
+    starRating = "Shop Not Yet Rated";
+  }
+
   return (
     <>
       <section className="barberCards">
         <div className="barberCardInfo">
           <p className="shopTitle">{barbershops.name}</p>
-          <p className="barberCardInfo">{barbershops.rating} Stars</p>
+          <p className="barberCardInfo">{starRating}</p>
         </div>
         <div className="barberCardInfo">
           {barbershops.image_url === "" ? (
@@ -22,7 +113,9 @@ export default ({ barbershops, props }) => {
             <img className="imageSize" src={barbershops.image_url} alt="barbershop" />
           )}
         </div>
-        <div className="barberCardInfo">{barbershops.display_phone === "" ? "Sorry! No phone number provided" : barbershops.display_phone}</div>
+        <div className="barberCardInfo">
+          {barbershops.display_phone === "" ? "Sorry! No phone number provided" : barbershops.display_phone}
+        </div>
         <div className="barberCardInfo">{barbershops.location.city}</div>
         <div className="barberCardInfo">
           {barbershops.location.display_address[0]}, {barbershops.location.display_address[1]}

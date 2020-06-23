@@ -7,7 +7,7 @@ const Login = props => {
   const password = useRef();
 
   const existingUserCheck = () => {
-    return fetch(`http://localhost:5000/users?email=${email.current.value}`)
+    return fetch(`http://localhost:5500/users?email=${email.current.value}`)
       .then(_ => _.json())
       .then(user => {
         if (user.length) {

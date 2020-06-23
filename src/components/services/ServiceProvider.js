@@ -7,7 +7,7 @@ export const ServicesDataProvider = props => {
 
   // Fetch states from DB
   const getServices = () => {
-    return fetch("http://localhost:5000/services")
+    return fetch("http://localhost:5000/api/services")
       .then(res => res.json())
       .then(setServices);
   };

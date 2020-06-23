@@ -1,0 +1,1777 @@
+{
+  "businesses": [
+    {
+      "id": "Rlqqf3oWzuIsAz8xsg0BvA",
+      "alias": "pioneer-gentlemens-barber-nashville",
+      "name": "Pioneer Gentlemen's Barber",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/An7NXl9Ftt_BAIzM7Nbq0g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/pioneer-gentlemens-barber-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 101,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1526699349262,
+        "longitude": -86.7835075713433
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "408 11th Ave S",
+        "address2": null,
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37203",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["408 11th Ave S", "Nashville, TN 37203"]
+      },
+      "phone": "+16159152763",
+      "display_phone": "(615) 915-2763",
+      "distance": 1812.9489488040338
+    },
+    {
+      "id": "p_SKmilL_7DQipc-igDPWQ",
+      "alias": "montys-barber-shop-nashville",
+      "name": "Monty's Barber Shop",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/DmV3y9-blwsfaxFFhsn4YQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/montys-barber-shop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 49,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.164678,
+        "longitude": -86.780087
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "25 Arcade",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37219",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["25 Arcade", "Nashville, TN 37219"]
+      },
+      "phone": "+16159212244",
+      "display_phone": "(615) 921-2244",
+      "distance": 3027.979025172141
+    },
+    {
+      "id": "E8KHf2X4bC4KyWlF248R-A",
+      "alias": "collins-and-co-barbershop-nashville-2",
+      "name": "Collins and Co Barbershop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ywwYKBYdDLnFI3z1x7-1og/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/collins-and-co-barbershop-nashville-2?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 69,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1642005,
+        "longitude": -86.7796932
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "221 4th Ave N",
+        "address2": "Ste 150",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37219",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["221 4th Ave N", "Ste 150", "Nashville, TN 37219"]
+      },
+      "phone": "+16157421799",
+      "display_phone": "(615) 742-1799",
+      "distance": 2970.708868784204
+    },
+    {
+      "id": "jqwyo1FM7U7kAXmTzeOTUg",
+      "alias": "scouts-barbershop-nashville",
+      "name": "Scout's Barbershop",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/iaikufnhZnNGRkbRKqQuKw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/scouts-barbershop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 137,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.175824,
+        "longitude": -86.756607
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "904 Main St",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37206",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["904 Main St", "Nashville, TN 37206"]
+      },
+      "phone": "+16159828345",
+      "display_phone": "(615) 982-8345",
+      "distance": 4566.536051694683
+    },
+    {
+      "id": "lJvdp30EQrHSAjW-gy-Rww",
+      "alias": "uncle-classic-barbershop-nashville",
+      "name": "Uncle Classic Barbershop",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/hLVS-qVCKZojoj-dYD5d-A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/uncle-classic-barbershop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 33,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.126118,
+        "longitude": -86.8462158
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "4326 Harding Pike",
+        "address2": "Ste 106",
+        "address3": null,
+        "city": "Nashville",
+        "zip_code": "37205",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["4326 Harding Pike", "Ste 106", "Nashville, TN 37205"]
+      },
+      "phone": "+16152976001",
+      "display_phone": "(615) 297-6001",
+      "distance": 6483.277903536761
+    },
+    {
+      "id": "rkjoDQvlfbUkBeEWOX4kKQ",
+      "alias": "kingpin-barber-nashville-4",
+      "name": "Kingpin Barber",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Jp4coCkYKWm0cI2q712-ig/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/kingpin-barber-nashville-4?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 16,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.144795,
+        "longitude": -86.7926466
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1026 16th Ave S",
+        "address2": "Fl 2",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37212",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1026 16th Ave S", "Fl 2", "Nashville, TN 37212"]
+      },
+      "phone": "+16297775950",
+      "display_phone": "(629) 777-5950",
+      "distance": 1729.134639359821
+    },
+    {
+      "id": "50hYj-xMSD_IVrZsgpqBSg",
+      "alias": "razorsharp-barbershop-nashville-2",
+      "name": "Razorsharp Barbershop",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/cquWb9ne9L84J3xHAmxO_w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/razorsharp-barbershop-nashville-2?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1145975818525,
+        "longitude": -86.7468331754208
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "2640 Nolensville Pike",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37210",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2640 Nolensville Pike", "Nashville, TN 37210"]
+      },
+      "phone": "+16152603952",
+      "display_phone": "(615) 260-3952",
+      "distance": 3637.727806683445
+    },
+    {
+      "id": "H-BFdzG_7fRoHwc0j2Gw7A",
+      "alias": "gs-spot-barber-and-style-nashville",
+      "name": "G's Spot Barber & Style",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/33szvGFcsPDDlfPaNsJSPw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/gs-spot-barber-and-style-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 16,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.1573295295238,
+        "longitude": -86.6349468380213
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "573 Stewarts Ferry Pike",
+        "address2": null,
+        "address3": null,
+        "city": "Nashville",
+        "zip_code": "37214",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["573 Stewarts Ferry Pike", "Nashville, TN 37214"]
+      },
+      "phone": "+16152182988",
+      "display_phone": "(615) 218-2988",
+      "distance": 12832.464013580588
+    },
+    {
+      "id": "tYXjviWMp19wHJS-GhHWhg",
+      "alias": "bowtie-barber-club-nashville-2",
+      "name": "Bowtie Barber Club",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Ul9vcolsmRkp8PhIx220qQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/bowtie-barber-club-nashville-2?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 73,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.170297,
+        "longitude": -86.671359
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "2624 Old Lebanon Pike",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37214",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2624 Old Lebanon Pike", "Nashville, TN 37214"]
+      },
+      "phone": "+16158895538",
+      "display_phone": "(615) 889-5538",
+      "distance": 10029.142249684603
+    },
+    {
+      "id": "bFW-MB_YUIXE-HZwTqvESA",
+      "alias": "oxford-barber-shop-nashville",
+      "name": "Oxford Barber Shop",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/CVRom_EmQtq98bztlO3y0g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/oxford-barber-shop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 39,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.1398583,
+        "longitude": -86.8006294
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1313 21st Ave S",
+        "address2": "Ste 103",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37232",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1313 21st Ave S", "Ste 103", "Nashville, TN 37232"]
+      },
+      "phone": "+16153274680",
+      "display_phone": "(615) 327-4680",
+      "distance": 2317.4871746028075
+    },
+    {
+      "id": "VKC3yRl10ZfGrjEv-AB5vw",
+      "alias": "local-honey-nashville-4",
+      "name": "Local Honey",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/WAW7gtCebbKBD_IhjafbLA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/local-honey-nashville-4?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 62,
+      "categories": [
+        {
+          "alias": "hair",
+          "title": "Hair Salons"
+        },
+        {
+          "alias": "waxing",
+          "title": "Waxing"
+        },
+        {
+          "alias": "skincare",
+          "title": "Skin Care"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.13194,
+        "longitude": -86.77862
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "2106 8th Ave S",
+        "address2": null,
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37204",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2106 8th Ave S", "Nashville, TN 37204"]
+      },
+      "phone": "+16154995879",
+      "display_phone": "(615) 499-5879",
+      "distance": 710.1423612768175
+    },
+    {
+      "id": "NMcmELXO3BIDGznDBQrFzw",
+      "alias": "beenes-barbershop-nashville",
+      "name": "Beene's Barbershop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BQm2kewpKODeRufd2iGrOg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/beenes-barbershop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 4,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.1946052226919,
+        "longitude": -86.7426120489836
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "1102 Chester Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37206",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1102 Chester Ave", "Nashville, TN 37206"]
+      },
+      "phone": "+16152278144",
+      "display_phone": "(615) 227-8144",
+      "distance": 6983.066778793845
+    },
+    {
+      "id": "3ko6uKNMzaX5aWVJPPKgoA",
+      "alias": "the-bears-den-barbershop-nashville",
+      "name": "The Bears' Den Barbershop",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/wtL5cvmhfM5jADAnfUJ8gg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-bears-den-barbershop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 3,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.170537,
+        "longitude": -86.667501
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "2720 Old Lebanon Rd",
+        "address2": "Ste 110",
+        "address3": null,
+        "city": "Nashville",
+        "zip_code": "37214",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2720 Old Lebanon Rd", "Ste 110", "Nashville, TN 37214"]
+      },
+      "phone": "+16158894958",
+      "display_phone": "(615) 889-4958",
+      "distance": 10362.224808393012
+    },
+    {
+      "id": "5XGsKnqpnKcEJCa6Uh32uw",
+      "alias": "scouts-barbershop-nashville-4",
+      "name": "Scout's Barbershop",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/I_BN4eymf-bGSI2thKBuPQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/scouts-barbershop-nashville-4?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 37,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.1517117,
+        "longitude": -86.7800742
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "811 Gleaves St",
+        "address2": null,
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37203",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["811 Gleaves St", "Nashville, TN 37203"]
+      },
+      "phone": "+16158407514",
+      "display_phone": "(615) 840-7514",
+      "distance": 1622.181184119417
+    },
+    {
+      "id": "dVim8gI3Q8H9dL1282_nlQ",
+      "alias": "montys-barber-shop-nashville-2",
+      "name": "Monty's Barber Shop",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YP3Op-LY0K_LSwXzJcHdBQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/montys-barber-shop-nashville-2?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 23,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1520651,
+        "longitude": -86.8419052
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "4519 Charlotte Ave",
+        "address2": null,
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37209",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["4519 Charlotte Ave", "Nashville, TN 37209"]
+      },
+      "phone": "+16159828992",
+      "display_phone": "(615) 982-8992",
+      "distance": 6179.726683176838
+    },
+    {
+      "id": "84N_idRywPw-m4mNJJYUWw",
+      "alias": "richs-barber-shop-gallatin",
+      "name": "Rich's Barber Shop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/sXYYzVlGa9M9tRGLo-5Hxw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/richs-barber-shop-gallatin?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 8,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.384196,
+        "longitude": -86.458243
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "538 W Main St",
+        "address2": "",
+        "address3": "",
+        "city": "Gallatin",
+        "zip_code": "37066",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["538 W Main St", "Gallatin, TN 37066"]
+      },
+      "phone": "+16154511536",
+      "display_phone": "(615) 451-1536",
+      "distance": 39502.64580642948
+    },
+    {
+      "id": "0AARwulr-FQBNTHsMXgcpQ",
+      "alias": "hawkins-barbershop-nashville",
+      "name": "Hawkins Barbershop",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/jr70Iv_tmN9_SHkFAXnsBg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/hawkins-barbershop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 13,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.22445,
+        "longitude": -86.725212
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1101 Riverwood Dr",
+        "address2": null,
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37216",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1101 Riverwood Dr", "Nashville, TN 37216"]
+      },
+      "phone": "+16154145755",
+      "display_phone": "(615) 414-5755",
+      "distance": 10631.749281283797
+    },
+    {
+      "id": "miCyYODskIygMgBQiRXOww",
+      "alias": "scouts-barbershop-nashville-3",
+      "name": "Scout's Barbershop",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VSzcvOzL2gM8Jno5XEYhaw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/scouts-barbershop-nashville-3?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 82,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1439731,
+        "longitude": -86.8415161
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "132 46th Ave N",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37209",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["132 46th Ave N", "Nashville, TN 37209"]
+      },
+      "phone": "+16159531359",
+      "display_phone": "(615) 953-1359",
+      "distance": 5967.870887772969
+    },
+    {
+      "id": "pQ2KcxhLoCjnzssNPk7T3Q",
+      "alias": "the-chair-nashville",
+      "name": "The Chair",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/xv06jZZ8B7gf65iMddpr6w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-chair-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 16,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.136447,
+        "longitude": -86.70018
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "841 Briley Pkwy",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37217",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["841 Briley Pkwy", "Nashville, TN 37217"]
+      },
+      "phone": "+16159877187",
+      "display_phone": "(615) 987-7187",
+      "distance": 6779.272303786126
+    },
+    {
+      "id": "VGI03D5UhoKMTuoP5Bc5oQ",
+      "alias": "razors-edge-hermitage",
+      "name": "Razor's Edge",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/td65yc7rPoIuN8SbsEgVcA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/razors-edge-hermitage?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 5,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.1952711,
+        "longitude": -86.6220721
+      },
+      "transactions": [],
+      "location": {
+        "address1": "3958 Lebanon Pike",
+        "address2": null,
+        "address3": "",
+        "city": "Hermitage",
+        "zip_code": "37076",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["3958 Lebanon Pike", "Hermitage, TN 37076"]
+      },
+      "phone": "+16158183793",
+      "display_phone": "(615) 818-3793",
+      "distance": 15147.20208802804
+    },
+    {
+      "id": "H8YNM2zHV9dtJaGxZYoQ2g",
+      "alias": "golden-star-barber-nashville",
+      "name": "Golden Star Barber",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/ZN6JmyWF35m8SANJNYIzEw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/golden-star-barber-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 7,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1016509,
+        "longitude": -86.740038
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "3300 Nolensville Pike",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37211",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["3300 Nolensville Pike", "Nashville, TN 37211"]
+      },
+      "phone": "+16155938531",
+      "display_phone": "(615) 593-8531",
+      "distance": 5120.5011640097755
+    },
+    {
+      "id": "9y5s17pWmUuc4Eu4X8Bb9A",
+      "alias": "slumerican-made-nashville",
+      "name": "Slumerican Made",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-Sm4zbULb3nAwmXOxMn69A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/slumerican-made-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 4,
+      "categories": [
+        {
+          "alias": "tattoo",
+          "title": "Tattoo"
+        },
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.163264,
+        "longitude": -86.796023
+      },
+      "transactions": [],
+      "location": {
+        "address1": "1314 Jo Johnston Ave",
+        "address2": null,
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37203",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1314 Jo Johnston Ave", "Nashville, TN 37203"]
+      },
+      "phone": "+16159023000",
+      "display_phone": "(615) 902-3000",
+      "distance": 3387.126242675602
+    },
+    {
+      "id": "EHtILfavpNYCs6b2qlEwBg",
+      "alias": "uncle-classic-barbershop-nashville-2",
+      "name": "Uncle Classic Barbershop",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/N2tX_R5MhdHAxBGOPS9BZA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/uncle-classic-barbershop-nashville-2?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 13,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1358086173653,
+        "longitude": -86.801993454919
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "2102 Acklen Ave",
+        "address2": "",
+        "address3": "Hillsboro Village",
+        "city": "Nashville",
+        "zip_code": "37212",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2102 Acklen Ave", "Hillsboro Village", "Nashville, TN 37212"]
+      },
+      "phone": "+16157308872",
+      "display_phone": "(615) 730-8872",
+      "distance": 2387.2970366522422
+    },
+    {
+      "id": "oSp8B87eQ8droCGiWUERZA",
+      "alias": "the-moose-music-row-nashville",
+      "name": "The Moose Music Row",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/PdQws5Ti1vul4SieV0jimA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-moose-music-row-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 47,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.14312,
+        "longitude": -86.79355
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1203 16th Ave S",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37212",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1203 16th Ave S", "Nashville, TN 37212"]
+      },
+      "phone": "+16153211200",
+      "display_phone": "(615) 321-1200",
+      "distance": 1724.9965577827516
+    },
+    {
+      "id": "V-eSPK8Lf1XouHAOGa1ymw",
+      "alias": "blues-barbershop-nashville-nashville-2",
+      "name": "Blues Barbershop Nashville",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ZZVdCMD6nifhcf22RfZzTw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/blues-barbershop-nashville-nashville-2?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.14697,
+        "longitude": -86.87038
+      },
+      "transactions": [],
+      "location": {
+        "address1": "6210 Charlotte Pike",
+        "address2": "Ste A",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37209",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["6210 Charlotte Pike", "Ste A", "Nashville, TN 37209"]
+      },
+      "phone": "+16154264847",
+      "display_phone": "(615) 426-4847",
+      "distance": 8571.25809375126
+    },
+    {
+      "id": "7tHux_iiACe0mp9W0ck9Hw",
+      "alias": "edgefield-barbershop-nashville",
+      "name": "Edgefield Barbershop",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/DsjfmJhFt-cXn2R101ke0A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/edgefield-barbershop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 19,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1811890557318,
+        "longitude": -86.7491469159722
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "413 Gallatin Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37206",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["413 Gallatin Ave", "Nashville, TN 37206"]
+      },
+      "phone": "+16155065776",
+      "display_phone": "(615) 506-5776",
+      "distance": 5384.152692435525
+    },
+    {
+      "id": "c5cbjWNec7NQoszpNQkn3Q",
+      "alias": "all-in-the-cut-nashville",
+      "name": "All in the Cut",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/yZQf1eXi39vJM1c91c7ROw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/all-in-the-cut-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 1,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.223535,
+        "longitude": -86.775514
+      },
+      "transactions": [],
+      "location": {
+        "address1": "3841 D Dickerson Rd",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37207",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["3841 D Dickerson Rd", "Nashville, TN 37207"]
+      },
+      "phone": "+16152935310",
+      "display_phone": "(615) 293-5310",
+      "distance": 9544.588638103121
+    },
+    {
+      "id": "U6XYdXFP18ZgkCIrfxe_nA",
+      "alias": "the-blockhouse-nashville",
+      "name": "The Blockhouse",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/IEFcVRu7fWtLTzWGtvQYJQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-blockhouse-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 11,
+      "categories": [
+        {
+          "alias": "bars",
+          "title": "Bars"
+        },
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1430924840765,
+        "longitude": -86.7684761185185
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "516 Houston St",
+        "address2": "",
+        "address3": null,
+        "city": "Nashville",
+        "zip_code": "37203",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["516 Houston St", "Nashville, TN 37203"]
+      },
+      "phone": "+16159882973",
+      "display_phone": "(615) 988-2973",
+      "distance": 871.2173326649252
+    },
+    {
+      "id": "yhBYIfdCq4nAiYghh9iqUg",
+      "alias": "boardroom-salon-for-men-brentwood-brentwood",
+      "name": "Boardroom Salon for Men - Brentwood",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/enofNTXAHHbQS3SmhRj_gQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/boardroom-salon-for-men-brentwood-brentwood?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 37,
+      "categories": [
+        {
+          "alias": "menshair",
+          "title": "Men's Hair Salons"
+        },
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.0301259379977,
+        "longitude": -86.7898203165587
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "7010 Executive Center Dr",
+        "address2": "Ste 104",
+        "address3": "",
+        "city": "Brentwood",
+        "zip_code": "37027",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["7010 Executive Center Dr", "Ste 104", "Brentwood, TN 37027"]
+      },
+      "phone": "+16156454701",
+      "display_phone": "(615) 645-4701",
+      "distance": 12030.395477028273
+    },
+    {
+      "id": "w8SFnjN2ETwFV4zLDBjePg",
+      "alias": "whiskey-neat-barbershop-nashville",
+      "name": "Whiskey Neat Barbershop",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/fhTFqsShpCJD5QyDKqGgCQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/whiskey-neat-barbershop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 15,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.1432624049722,
+        "longitude": -86.7249925730164
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "1423 Elm Hill Pike",
+        "address2": null,
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37210",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1423 Elm Hill Pike", "Nashville, TN 37210"]
+      },
+      "phone": "+16158631133",
+      "display_phone": "(615) 863-1133",
+      "distance": 4578.597895356932
+    },
+    {
+      "id": "opNF8k_hOkH2qeRHj6LW-g",
+      "alias": "rey-s-barber-shop-nashville-2",
+      "name": "Rey’s barber shop",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Ep49yG_YCOtw0ZaZfjimIA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/rey-s-barber-shop-nashville-2?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 4,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.09037,
+        "longitude": -86.65147
+      },
+      "transactions": [],
+      "location": {
+        "address1": "2201 Murfreesboro Pike",
+        "address2": "Ste C-214",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37217",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2201 Murfreesboro Pike", "Ste C-214", "Nashville, TN 37217"]
+      },
+      "phone": "+16154621065",
+      "display_phone": "(615) 462-1065",
+      "distance": 12244.400418775438
+    },
+    {
+      "id": "JUkkEZZRvHC3fLIEPkvLww",
+      "alias": "family-barber-shop-nashville",
+      "name": "Family Barber Shop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ffw3H8R8e3J0ZrxV2eGtZQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/family-barber-shop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 20,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.14539,
+        "longitude": -86.81296
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "107 28th Ave N",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37203",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["107 28th Ave N", "Nashville, TN 37203"]
+      },
+      "phone": "+16153400007",
+      "display_phone": "(615) 340-0007",
+      "distance": 3467.060097287436
+    },
+    {
+      "id": "dBT4_6FnP9dsDnRlzeE5Ug",
+      "alias": "brads-barber-shop-madison",
+      "name": "Brad's Barber Shop",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/sjWl4abOqrDHME5Xle0JBw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/brads-barber-shop-madison?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.2607536,
+        "longitude": -86.7125473
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "207 Gallatin Pike S",
+        "address2": "",
+        "address3": "",
+        "city": "Madison",
+        "zip_code": "37115",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["207 Gallatin Pike S", "Madison, TN 37115"]
+      },
+      "phone": "+16158659734",
+      "display_phone": "(615) 865-9734",
+      "distance": 14839.42161980595
+    },
+    {
+      "id": "zraS81x2VEzuRXhgF2lYOw",
+      "alias": "scouts-barbershop-nashville-7",
+      "name": "Scout's Barbershop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/RFxFHn5tpTpJDnqvmkQ42A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/scouts-barbershop-nashville-7?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 3,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.1321724500676,
+        "longitude": -86.7738803259064
+      },
+      "transactions": [],
+      "location": {
+        "address1": "2024 Lindell Ave",
+        "address2": "Ste B",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37203",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2024 Lindell Ave", "Ste B", "Nashville, TN 37203"]
+      },
+      "phone": "+16153207737",
+      "display_phone": "(615) 320-7737",
+      "distance": 778.2079663406522
+    },
+    {
+      "id": "y0GQv1K4WAK7OZc-fsBxNQ",
+      "alias": "nashville-beard-and-barber-nashville",
+      "name": "Nashville Beard And Barber",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/XvNUG7IBzja92VUkzSJu_w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/nashville-beard-and-barber-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 12,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.1840927599431,
+        "longitude": -86.754719858081
+      },
+      "transactions": [],
+      "location": {
+        "address1": "726 Mcferrin Ave",
+        "address2": "Ste A",
+        "address3": null,
+        "city": "Nashville",
+        "zip_code": "37206",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["726 Mcferrin Ave", "Ste A", "Nashville, TN 37206"]
+      },
+      "phone": "+16158353667",
+      "display_phone": "(615) 835-3667",
+      "distance": 5486.149709663882
+    },
+    {
+      "id": "zTt56TCJjdCs0ATtuQbPKg",
+      "alias": "trim-classic-barber-and-legendary-beauty-nashville",
+      "name": "Trim Classic Barber & Legendary Beauty",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/cmLF9lAj32vXWkS0vpcvKg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/trim-classic-barber-and-legendary-beauty-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 80,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.12664,
+        "longitude": -86.78956
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "2315 12th Ave S",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37204",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2315 12th Ave S", "Nashville, TN 37204"]
+      },
+      "phone": "+16152698029",
+      "display_phone": "(615) 269-8029",
+      "distance": 1753.8793359313916
+    },
+    {
+      "id": "ZMtugtnpKl1gJRkCUk85-Q",
+      "alias": "jordans-barber-and-beauty-salon-nashville",
+      "name": "Jordan's Barber & Beauty Salon",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/CJ0jOZrjDkMbBr7hEtP9gg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/jordans-barber-and-beauty-salon-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 5,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.213144,
+        "longitude": -86.732128
+      },
+      "transactions": [],
+      "location": {
+        "address1": "3621 Gallatin Pike",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37216",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["3621 Gallatin Pike", "Nashville, TN 37216"]
+      },
+      "phone": "+16152262156",
+      "display_phone": "(615) 226-2156",
+      "distance": 9248.904821830462
+    },
+    {
+      "id": "nk-Q6PrH5Pbn6nuI64vfFQ",
+      "alias": "luis-barber-classic-barbershop-antioch-3",
+      "name": "Luis Barber Classic Barbershop",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/BuigoRQx8Gu8Qcorgrd6qw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/luis-barber-classic-barbershop-antioch-3?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 16,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.045918,
+        "longitude": -86.664814
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "1135 Bell Rd",
+        "address2": "Ste 314",
+        "address3": "",
+        "city": "Antioch",
+        "zip_code": "37013",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1135 Bell Rd", "Ste 314", "Antioch, TN 37013"]
+      },
+      "phone": "+16157171313",
+      "display_phone": "(615) 717-1313",
+      "distance": 14250.915812439578
+    },
+    {
+      "id": "TAvo6vvNohA_Gw7U4tryYA",
+      "alias": "monty-s-barber-shop-nashville",
+      "name": "Monty’s Barber Shop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ENuqVzXgtAXgwvyKkWTwJw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/monty-s-barber-shop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 1,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.1696693940619,
+        "longitude": -86.6747133333334
+      },
+      "transactions": [],
+      "location": {
+        "address1": "2619 Lebanon Pike",
+        "address2": "",
+        "address3": null,
+        "city": "Nashville",
+        "zip_code": "37214",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2619 Lebanon Pike", "Nashville, TN 37214"]
+      },
+      "phone": "+16158180291",
+      "display_phone": "(615) 818-0291",
+      "distance": 9723.249741594955
+    },
+    {
+      "id": "0SIQ1V-s_25rG-qdqTM1fg",
+      "alias": "haymakers-and-co-nashville",
+      "name": "Haymakers & Co.",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/SuFYmTUKyVn9WM_SOnZ_vA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/haymakers-and-co-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 7,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        },
+        {
+          "alias": "menscloth",
+          "title": "Men's Clothing"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.140541,
+        "longitude": -86.817342
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "3307 W End Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37203",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["3307 W End Ave", "Nashville, TN 37203"]
+      },
+      "phone": "+16158109442",
+      "display_phone": "(615) 810-9442",
+      "distance": 3769.5274399036384
+    },
+    {
+      "id": "55xw3usxDYqaHwOpxzeZ7g",
+      "alias": "joes-barber-shop-nashville",
+      "name": "Joe's Barber Shop",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/71kYKNWARsZckcYAtxqLug/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/joes-barber-shop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 28,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.1050877552252,
+        "longitude": -86.7957600206137
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "4008 Granny White Pike",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37204",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["4008 Granny White Pike", "Nashville, TN 37204"]
+      },
+      "phone": "+16159639960",
+      "display_phone": "(615) 963-9960",
+      "distance": 4056.619284883997
+    },
+    {
+      "id": "08zL0CHz6CwcCmbI4sT3ZA",
+      "alias": "refine-classic-barbershop-mount-juliet",
+      "name": "Refine Classic Barbershop",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/yyE3zv0J4nJ25_xKhSbRDQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/refine-classic-barbershop-mount-juliet?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 21,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.20144,
+        "longitude": -86.51826
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "2231 N Mount Juliet Rd",
+        "address2": "",
+        "address3": null,
+        "city": "Mount Juliet",
+        "zip_code": "37122",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2231 N Mount Juliet Rd", "Mount Juliet, TN 37122"]
+      },
+      "phone": "+16152883484",
+      "display_phone": "(615) 288-3484",
+      "distance": 24165.621399722822
+    },
+    {
+      "id": "9wWOlSg6Q2laO255gxHljw",
+      "alias": "fade-doc-antioch-4",
+      "name": "Fade Doc",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/I_98lCMJMGKi9qpPwDXtig/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/fade-doc-antioch-4?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 7,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.0478273,
+        "longitude": -86.6482749
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "5308 Mount View Rd",
+        "address2": "Ste G",
+        "address3": null,
+        "city": "Antioch",
+        "zip_code": "37013",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["5308 Mount View Rd", "Ste G", "Antioch, TN 37013"]
+      },
+      "phone": "+16157318935",
+      "display_phone": "(615) 731-8935",
+      "distance": 15107.221582639057
+    },
+    {
+      "id": "qVHmGsuQf0BhhXpWlbJNGg",
+      "alias": "forty-ten-barber-studio-nashville",
+      "name": "Forty Ten Barber Studio",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qwrigVP-NqJgSk-I4KHNqw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/forty-ten-barber-studio-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 9,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.1037,
+        "longitude": -86.81522
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "4010 Hillsboro Pike",
+        "address2": "Ste B",
+        "address3": null,
+        "city": "Nashville",
+        "zip_code": "37215",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["4010 Hillsboro Pike", "Ste B", "Nashville, TN 37215"]
+      },
+      "phone": "+16156518979",
+      "display_phone": "(615) 651-8979",
+      "distance": 5194.893871683888
+    },
+    {
+      "id": "aov-4pLFArKwRARhSK52Xw",
+      "alias": "high-n-tight-barber-shop-nashville",
+      "name": "High.N.Tight Barber Shop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/W5JvXcNVTEDNYLYwnyWWHw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/high-n-tight-barber-shop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 2,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.143835,
+        "longitude": -86.79279267
+      },
+      "transactions": [],
+      "location": {
+        "address1": "1106 16th Ave S",
+        "address2": "Fl 3",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37212",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1106 16th Ave S", "Fl 3", "Nashville, TN 37212"]
+      },
+      "phone": "+16152082463",
+      "display_phone": "(615) 208-2463",
+      "distance": 1694.8317268688393
+    },
+    {
+      "id": "jltDog3uZ0bJ45meN2bzzg",
+      "alias": "nwanis-barber-and-style-nashville",
+      "name": "Nwani's Barber & Style",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/iPsQkj9xSPrVvt_2Cul5tw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/nwanis-barber-and-style-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 9,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 3.0,
+      "coordinates": {
+        "latitude": 36.17233,
+        "longitude": -86.79638
+      },
+      "transactions": [],
+      "location": {
+        "address1": "1030 Jefferson St",
+        "address2": null,
+        "address3": null,
+        "city": "Nashville",
+        "zip_code": "37208",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["1030 Jefferson St", "Nashville, TN 37208"]
+      },
+      "phone": "+16155695262",
+      "display_phone": "(615) 569-5262",
+      "distance": 4284.499860416026
+    },
+    {
+      "id": "et6fPrmrq18HdvT3yvAxEg",
+      "alias": "cuts-n-blessings-franklin-2",
+      "name": "Cuts N Blessings",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/viZfgSDODUxnXRbFXq0Lqw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/cuts-n-blessings-franklin-2?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 7,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 35.9228014,
+        "longitude": -86.8656902
+      },
+      "transactions": [],
+      "location": {
+        "address1": "202 South Margin St",
+        "address2": null,
+        "address3": "",
+        "city": "Franklin",
+        "zip_code": "37064",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["202 South Margin St", "Franklin, TN 37064"]
+      },
+      "phone": "+16155952550",
+      "display_phone": "(615) 595-2550",
+      "distance": 25233.884650685282
+    },
+    {
+      "id": "HTKsiCUwf3wXinmdvQezeA",
+      "alias": "barbour-3-brentwood",
+      "name": "Barbour 3",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/NIl11-08eJKSrcMudSrqvw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/barbour-3-brentwood?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "menshair",
+          "title": "Men's Hair Salons"
+        },
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 36.0352473,
+        "longitude": -86.7847786
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "7110 Town Ctr Way",
+        "address2": "Ste 2",
+        "address3": "",
+        "city": "Brentwood",
+        "zip_code": "37027",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["7110 Town Ctr Way", "Ste 2", "Brentwood, TN 37027"]
+      },
+      "phone": "+16157129525",
+      "display_phone": "(615) 712-9525",
+      "distance": 11422.412697352409
+    },
+    {
+      "id": "kingPUNT6SC8idmqMMrKjQ",
+      "alias": "the-handsomizer-nashville",
+      "name": "The Handsomizer™",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/0pwSKo75dRbnpYK3n277ZQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/the-handsomizer-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 12,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 5.0,
+      "coordinates": {
+        "latitude": 36.127070666556,
+        "longitude": -86.7670080001592
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "2301 Bransford Ave",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37204",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["2301 Bransford Ave", "Nashville, TN 37204"]
+      },
+      "phone": "+16158044262",
+      "display_phone": "(615) 804-4262",
+      "distance": 1407.0833006179212
+    },
+    {
+      "id": "OE5GoPzLe-QnUAZtg5SXyA",
+      "alias": "green-hills-barber-shop-nashville",
+      "name": "Green Hills Barber Shop",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/KzyqFXKfx-Z0qVwLTWwofA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/green-hills-barber-shop-nashville?adjust_creative=xvaeF_Daee7vhOSk5G9g_w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xvaeF_Daee7vhOSk5G9g_w",
+      "review_count": 24,
+      "categories": [
+        {
+          "alias": "barbers",
+          "title": "Barbers"
+        }
+      ],
+      "rating": 4.0,
+      "coordinates": {
+        "latitude": 36.102584,
+        "longitude": -86.816844
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "4104 Hillsboro Pike",
+        "address2": "",
+        "address3": "",
+        "city": "Nashville",
+        "zip_code": "37215",
+        "country": "US",
+        "state": "TN",
+        "display_address": ["4104 Hillsboro Pike", "Nashville, TN 37215"]
+      },
+      "phone": "+16152922222",
+      "display_phone": "(615) 292-2222",
+      "distance": 5387.718806107052
+    }
+  ],
+  "total": 202,
+  "region": {
+    "center": {
+      "longitude": -86.7755126953125,
+      "latitude": 36.137698356986476
+    }
+  }
+}

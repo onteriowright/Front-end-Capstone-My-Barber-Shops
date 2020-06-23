@@ -7,14 +7,14 @@ export const FavoriteBarberShopProvider = props => {
 
   // Fetch favorites from DB
   const getFavoriteBarberShops = () => {
-    return fetch("http://localhost:5000/favoriteBarberShops")
+    return fetch("http://localhost:5500/favoriteBarberShops")
       .then(res => res.json())
       .then(setFavoriteBarberShops);
   };
 
   // Add favorites to DB
   const addFavoriteBarberShop = barbershop => {
-    return fetch("http://localhost:5000/favoriteBarberShops", {
+    return fetch("http://localhost:5500/favoriteBarberShops", {
       method: "POST",
       headers: {
         "Content-Type": "Application/json"
@@ -25,7 +25,7 @@ export const FavoriteBarberShopProvider = props => {
 
   // Edit favorites from DB
   const editFavoriteBarberShop = barbershopObject => {
-    return fetch(`http://localhost:5000/favoriteBarberShops/${barbershopObject.id}`, {
+    return fetch(`http://localhost:5500/favoriteBarberShops/${barbershopObject.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "Application/json"
@@ -36,7 +36,7 @@ export const FavoriteBarberShopProvider = props => {
 
   // Delete favorites from DB
   const deleteFavoriteBarberShop = barbershopId => {
-    return fetch(`http://localhost:5000/favoriteBarberShops/${barbershopId.id}`, {
+    return fetch(`http://localhost:5500/favoriteBarberShops/${barbershopId.id}`, {
       method: "DELETE"
     }).then(getFavoriteBarberShops);
   };

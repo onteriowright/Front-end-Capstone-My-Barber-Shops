@@ -7,14 +7,14 @@ export const BarberShopReviewProvider = props => {
 
   // Fetch reviews form DB
   const getBarberReviews = () => {
-    return fetch("http://localhost:5000/barberShopReviews")
+    return fetch("http://localhost:5500/barberShopReviews")
       .then(res => res.json())
       .then(setBarberReviews);
   };
 
   // Add reviews to DB
   const addBarberReviews = reviews => {
-    return fetch("http://localhost:5000/BarberShopReviews", {
+    return fetch("http://localhost:5500/BarberShopReviews", {
       method: "POST",
       headers: {
         "Content-Type": "Application/json"
@@ -25,7 +25,7 @@ export const BarberShopReviewProvider = props => {
 
   // Edit reviews in DB
   const editBarberShopReviews = barberShopReviewsObject => {
-    return fetch(`http://localhost:5000/barberShopReviews/${barberShopReviewsObject.id}`, {
+    return fetch(`http://localhost:5500/barberShopReviews/${barberShopReviewsObject.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "Application/json"
@@ -36,7 +36,7 @@ export const BarberShopReviewProvider = props => {
 
   // Delete reviews from DB
   const deleteBarberReviews = barberShopReviews => {
-    return fetch(`http://localhost:5000/barberShopReviews/${barberShopReviews.id}`, {
+    return fetch(`http://localhost:5500/barberShopReviews/${barberShopReviews.id}`, {
       method: "DELETE"
     }).then(getBarberReviews);
   };

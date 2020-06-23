@@ -18,6 +18,9 @@ export default props => {
         <Link style={{ textDecoration: "none" }} className="navbar__item" to="/favoriteBarberShops">
           Favorites
         </Link>
+        <Link style={{ textDecoration: "none" }} className="navbar__item" to="/shopReviews">
+          Reviews
+        </Link>
         {/* only show log out btn when user is logged in */}
         {localStorage.getItem("barber_user") ? (
           <>

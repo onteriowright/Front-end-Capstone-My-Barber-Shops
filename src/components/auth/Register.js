@@ -7,7 +7,7 @@ const Register = props => {
   const verifyPassword = useRef();
 
   const existingUserCheck = () => {
-    return fetch(`http://localhost:5000/users?email=${email.current.value}`)
+    return fetch(`http://localhost:5500/users?email=${email.current.value}`)
       .then(_ => _.json())
       .then(user => {
         if (user.length) {
@@ -55,16 +55,45 @@ const Register = props => {
       <form className="form--login registerContainer barberForm loginForm" onSubmit={handleRegister}>
         <h1 className="registerHeader">Please register new user</h1>
         <fieldset className="registerUser loginForm">
-          <input ref={userName} type="text" name="userName" className="form-control registerUser" placeholder="Enter username..." required autoFocus />
+          <input
+            ref={userName}
+            type="text"
+            name="userName"
+            className="form-control registerUser"
+            placeholder="Enter username..."
+            required
+            autoFocus
+          />
         </fieldset>
         <fieldset className="registerUser loginForm">
-          <input ref={email} type="email" name="email" className="form-control registerEmail" placeholder="Enter email address..." required />
+          <input
+            ref={email}
+            type="email"
+            name="email"
+            className="form-control registerEmail"
+            placeholder="Enter email address..."
+            required
+          />
         </fieldset>
         <fieldset className="registerUser loginForm">
-          <input ref={password} type="password" name="password" className="form-control registerPass" placeholder="Enter password..." required />
+          <input
+            ref={password}
+            type="password"
+            name="password"
+            className="form-control registerPass"
+            placeholder="Enter password..."
+            required
+          />
         </fieldset>
         <fieldset className="registerUser loginForm">
-          <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control confirmPass" placeholder="Enter password again..." required />
+          <input
+            ref={verifyPassword}
+            type="password"
+            name="verifyPassword"
+            className="form-control confirmPass"
+            placeholder="Enter password again..."
+            required
+          />
         </fieldset>
         <fieldset className="loginForm">
           <section className="register-btn">

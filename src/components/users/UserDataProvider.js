@@ -7,14 +7,14 @@ export const UserDataProvider = props => {
 
   // Fetch users from DB
   const getUsers = () => {
-    return fetch("http://localhost:5000/users")
+    return fetch("http://localhost:5500/users")
       .then(res => res.json())
       .then(setUsers);
   };
 
   // Send post to add users to DB
   const addUsers = user => {
-    return fetch("http://localhost:5000/users", {
+    return fetch("http://localhost:5500/users", {
       method: "POST",
       headers: {
         "Content-Type": "Application/json"
@@ -25,7 +25,7 @@ export const UserDataProvider = props => {
 
   // Edit users
   const editUsers = userObject => {
-    return fetch(`http://localhost:5000/users/${userObject.id}`, {
+    return fetch(`http://localhost:5500/users/${userObject.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "Application/json"
@@ -36,7 +36,7 @@ export const UserDataProvider = props => {
 
   // Delete users
   const deleteUsers = userId => {
-    return fetch(`http://localhost:5000/user/${userId.id}`, {
+    return fetch(`http://localhost:55 00/user/${userId.id}`, {
       method: "DELETE"
     }).then(getUsers);
   };
